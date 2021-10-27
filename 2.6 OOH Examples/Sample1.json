@@ -1,2 +1,70 @@
 {
+    "id": "123",
+    "imp": [
+        {
+            "id": "",
+            "banner": "",
+            "video": "",
+            "audio": "",
+            "bidfloor": "",
+            "bidfloorcur": "",
+            "exp": ""
+        }
+    ],
+    "site": [
+        {
+            "publisher":"",
+            "ext": [
+                {
+                    "dooh": [
+                        {
+                            "deviceids": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "geo": [
+                {
+                    "lat": "",
+                    "lon": "",
+                    "type": "",
+                    "accuracy": "",
+                    "lastfix": "",
+                    "utcoffset": "",
+                    "ext": [
+                        {
+                            "dooh": [
+                                {
+                                    "venuetypeid": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "devicetype": "",
+            "h": "",
+            "w": "",
+            "ppi": ""
+        }
+    ],
+    "user": [
+        {
+            "ext": [
+                {
+                    "dooh": [
+                        {
+                            "qtyflt": "",
+                            "qtysourceid": "",
+                            "qtysource": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
