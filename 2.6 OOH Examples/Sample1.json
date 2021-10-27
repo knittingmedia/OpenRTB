@@ -1,11 +1,37 @@
 {
-    "id": "123",
+    "id": "",
     "imp": [
         {
             "id": "",
-            "banner": "",
-            "video": "",
-            "audio": "",
+            "banner": [
+                {
+                    "format": []
+                }
+            ],
+            "video": [
+                {
+                    "mimes": [
+                        " "
+                    ],
+                    "minduration": 0,
+                    "maxduration": 0,
+                    "protocols": [
+                        0
+                    ]
+                }
+            ],
+            "audio": [
+                {
+                    "mimes": [
+                        " "
+                    ],
+                    "minduration": 0,
+                    "maxduration": 0,
+                    "protocols": [
+                        0
+                    ]
+                }
+            ],
             "bidfloor": "",
             "bidfloorcur": "",
             "exp": ""
@@ -13,12 +39,14 @@
     ],
     "site": [
         {
-            "publisher":"",
+            "publisher": "",
             "ext": [
                 {
                     "dooh": [
                         {
-                            "deviceids": []
+                            "deviceids": [
+                                " "
+                            ]
                         }
                     ]
                 }
@@ -29,8 +57,8 @@
         {
             "geo": [
                 {
-                    "lat": "",
-                    "lon": "",
+                    "lat": 0.0000,
+                    "lon": 0.0000,
                     "type": "",
                     "accuracy": "",
                     "lastfix": "",
@@ -47,9 +75,9 @@
                 }
             ],
             "devicetype": "",
-            "h": "",
-            "w": "",
-            "ppi": ""
+            "h": 0,
+            "w": 0,
+            "ppi": 0
         }
     ],
     "user": [
@@ -58,8 +86,8 @@
                 {
                     "dooh": [
                         {
-                            "qtyflt": "",
-                            "qtysourceid": "",
+                            "qtyflt": 1,
+                            "qtysourceid": 0,
                             "qtysource": ""
                         }
                     ]
