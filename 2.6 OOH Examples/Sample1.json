@@ -1,0 +1,98 @@
+{
+    "id": "",
+    "imp": [
+        {
+            "id": "",
+            "banner": [
+                {
+                    "format": []
+                }
+            ],
+            "video": [
+                {
+                    "mimes": [
+                        " "
+                    ],
+                    "minduration": 0,
+                    "maxduration": 0,
+                    "protocols": [
+                        0
+                    ]
+                }
+            ],
+            "audio": [
+                {
+                    "mimes": [
+                        " "
+                    ],
+                    "minduration": 0,
+                    "maxduration": 0,
+                    "protocols": [
+                        0
+                    ]
+                }
+            ],
+            "bidfloor": "",
+            "bidfloorcur": "",
+            "exp": ""
+        }
+    ],
+    "site": [
+        {
+            "publisher": "",
+            "ext": [
+                {
+                    "dooh": [
+                        {
+                            "deviceids": [
+                                " "
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "device": [
+        {
+            "geo": [
+                {
+                    "lat": 0.0000,
+                    "lon": 0.0000,
+                    "type": "",
+                    "accuracy": "",
+                    "lastfix": "",
+                    "utcoffset": "",
+                    "ext": [
+                        {
+                            "dooh": [
+                                {
+                                    "venuetypeid": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "devicetype": "DOOH",
+            "h": 0,
+            "w": 0,
+            "ppi": 0
+        }
+    ],
+    "user": [
+        {
+            "ext": [
+                {
+                    "dooh": [
+                        {
+                            "qtyflt": 1,
+                            "qtysourceid": 0,
+                            "qtysource": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
