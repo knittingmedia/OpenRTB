@@ -7,21 +7,19 @@
     "h": 1920
   },
   "ext": {
-    "OOH":{
-      "Targeting":[
+    "OOH": {
+      "Targeting": [
         {
-        "Name": "Inventory",
-        "Type": "Frames",
-        "DataSource": "Space",
-        "Target": "tv_area",
-        "TargetValues": [
-                "North East",
-                "North West" 
-            ],
-        
-      }
-        ]
-      
+          "Name": "Inventory",
+          "Type": "Frames",
+          "DataSource": "Space",
+          "Target": "tv_area",
+          "TargetValues": [
+            "North East",
+            "North West"
+          ]
+        }
+      ]
     }
   }
 }
