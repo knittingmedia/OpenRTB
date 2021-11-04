@@ -1,91 +1,57 @@
 {
     "id": "162059897743978051070",
     "at": 1,
-    "imp": [{
+    "imp": [
+        {
             "id": "1",
-            "tagid": "deviceid",
+            "tagid": "1235461904",
             "secure": 1,
             "banner": {
-                "w": 1920,
-                "h": 1080,
-                "format": [{
-                        "w": 960,
-                        "h": 540
-                    }, {
-                        "w": 1280,
-                        "h": 720
+                "w": 576,
+                "h": 288,
+                "format": [
+                    {
+                        "w": 576,
+                        "h": 288
                     }
+                ],
+                "mimes": [
+                    "image/jpg"
                 ]
             },
-            "video": {
-                "mimes": ["video/mp4", "video/mpeg"],
-                "minduration": 15,
-                "maxduration": 30,
-                "protocols": [1, 2, 3, 4, 5, 6, 7, 8],
-                "w": 1920,
-                "h": 1080,
-                "boxingallowed": 1,
-                "playbackmethod": [2]
-            },
-            "bidfloor": 1.0,
+            "bidfloor": 5.0,
             "pmp": {
                 "private_auction": 0,
-                "deals": [{
+                "deals": [
+                    {
                         "id": "123abc",
-                        "bidfloor": 2.5
+                        "bidfloor": 3.5
                     }
                 ]
             }
         }
     ],
-    "app": {
-        "id": "12345",
-        "name": "Clearchannel Placement 12345",
-        "bundle": "com.clearchannel.12345",
-        "cat": ["IAB1", "IAB12"],
-        "publisher": {
-            "id": "1001",
-            "name": "Clearchannel"
-        }
-    },
-    "site": {
-        "id": "12345",
-        "name": "Clearchannel Placement 12345",
-        "domain": "12345.clearchannel.com",
-        "cat": ["IAB1", "IAB12"],
-        "publisher": {
-            "id": "1001",
-            "name": "Clearchannel"
-        }
-    },
     "device": {
-        "ua": "OOH Device 1.0",
         "geo": {
-            "lat": 30.240707,
-            "lon": -92.181485,
+            "lat": 52.46475,
+            "lon": -1.89271,
             "type": 1,
-            "country": "USA",
-            "region": "MN",
-            "metro": "613",
-            "city": "Saint Michael",
-            "zip": "55376"
+            "lastfix": 9999999,
+            "country": "UK",
+            "region": "Midlands",
+            "metro": "West Midlands",
+            "city": "Birmingham",
+            "zip": "B5 7DP"
         },
         "devicetype": 8,
-        "w": 1920,
-        "h": 1080,
-        "ppi": 32,
+        "w": 576,
+        "h": 288,
+        "ppi": 3,
         "ext": {
             "dooh": {
-                "venuetypeid": 301
-            },
-            "data": {
-                "name": "oohspace.co.uk",
-                "segment": [{
-                        "id": "1001"
-                    }, {
-                        "id": "1002"
-                    }
-                ]
+                "venuetypeid": 301,
+                "device_vendor_id": "1235461904",
+                "device_vendor": "Global"
             }
         }
     },
@@ -94,26 +60,10 @@
             "dooh": {
                 "qtyflt": 125.2,
                 "qtyflt_type": 1,
-                "qtyflt_vendor": "nielsen.com"
+                "qtyflt_vendor": "route.org.uk"
             }
         }
     },
-    "bcat": ["IAB22-2", "IAB23"],
-    "badv": ["blockeddomain.com", "baddomain.com"],
-    "source": {
-        "ext": {
-            "schain": {
-                "complete": 1,
-                "nodes": [{
-                        "asi": "seller.com",
-                        "sid": "1001",
-                        "hp": 1
-                    }
-                ]
-            }
-        }
-    },
-    "tmax": 449,
     "exp": 7200,
-    "cur": "USD"
+    "cur": "GBP"
 }
