@@ -4,7 +4,7 @@
     "imp": [
         {
             "id": "1",
-            "tagid": "",
+            "tagid": "1235461904",
             "secure": 1,
             "banner": {
                 "w": 576,
@@ -18,8 +18,7 @@
                 "mimes": [
                     "image/jpg"
                 ]
-            },
-            "tagid":"1235461904"
+            }
             "bidfloor": 5.0,
             "pmp": {
                 "private_auction": 0,
