@@ -49,7 +49,9 @@
         "h": 288,
         "ppi": 3,
         "ifa": "1235461904",
-        "ifa_type": "ppid",
+        "ext": {
+            "ifa_type": "ppid"
+        }
     },
     "user": {
         "ext": {
