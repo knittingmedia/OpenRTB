@@ -1,0 +1,63 @@
+{
+    "id": "162059897743978051070",
+    "at": 1,
+    "imp": [
+        {
+            "id": "1",
+            "tagid": "",
+            "secure": 1,
+            "banner": {
+                "w": 576,
+                "h": 288,
+                "format": [
+                    {
+                        "w": 576,
+                        "h": 288
+                    }
+                ],
+                "mimes": [
+                    "image/jpg"
+                ]
+            },
+            "tagid":"1235461904"
+            "bidfloor": 5.0,
+            "pmp": {
+                "private_auction": 0,
+                "deals": [
+                    {
+                        "id": "123abc",
+                        "bidfloor": 3.5
+                    }
+                ]
+            },
+            "exp": 7200
+        }
+    ],
+    "device": {
+        "geo": {
+            "lat": 52.46475,
+            "lon": -1.89271,
+            "type": 1,
+            "lastfix": 9999999,
+            "country": "UK",
+            "region": "Midlands",
+            "metro": "West Midlands",
+            "city": "Birmingham",
+            "zip": "B5 7DP"
+        },
+        "devicetype": 8,
+        "w": 576,
+        "h": 288,
+        "ppi": 3
+    },
+    "user": {
+        "ext": {
+            "dooh": {
+                "qtyflt": 125.2,
+                "qtyflt_type": 1,
+                "qtyflt_vendor": "route.org.uk"
+            }
+        }
+    },
+    "cur": "GBP"
+}
