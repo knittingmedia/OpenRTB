@@ -2,8 +2,10 @@
     "id": "162059897743978051070",
     "at": 1,
     "site": [
-        "domain":"global.com"
-        ],
+        {
+            "domain": "global.com"
+        }
+    ],
     "imp": [
         {
             "id": "1",
@@ -21,7 +23,7 @@
                 "mimes": [
                     "image/jpg"
                 ]
-            }
+            },
             "bidfloor": 5.0,
             "pmp": {
                 "private_auction": 0,
@@ -32,10 +34,9 @@
                     }
                 ]
             },
-            "ext" : {
+            "ext": {
                 "deliverytime": "1638554551"
             }
-                
         }
     ],
     "device": {
