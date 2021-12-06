@@ -39,8 +39,8 @@
                     7,
                     8
                 ],
-                "w": 1920,
-                "h": 1080,
+                "w": 576,
+                "h": 288,
                 "boxingallowed": 1,
                 "playbackmethod": [
                     1
@@ -66,14 +66,14 @@
     ],
     "site": {
         "id": "35740",
-        "domain": "mta.clearchannel.com",
+        "domain": "global.com",
         "cat": [
             "IAB1",
             "IAB12"
         ],
         "publisher": {
             "id": "3637",
-            "name": "Metropolitan Transportation Authority"
+            "name": "Global Outdoor"
         },
         "ext": {
             "data": {
@@ -93,7 +93,7 @@
         }
     },
     "device": {
-        "ua": "OOH Device 1.0",
+        "ua": "LED",
         "geo": {
             "lat": 52.46475,
             "lon": -1.89271,
