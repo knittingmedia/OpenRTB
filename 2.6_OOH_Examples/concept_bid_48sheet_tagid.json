@@ -1,14 +1,14 @@
 {
     "id": "162059897743978051070",
     "at": 1,
-    "site": [
-        "domain":"global.com"
-        ],
     "imp": [
         {
             "id": "1",
             "tagid": "1235461904",
             "secure": 1,
+            "exp": 7200,
+            "bidfloor": 5.0,
+            "bidfloorcur": "GBP",
             "banner": {
                 "w": 576,
                 "h": 288,
@@ -21,8 +21,31 @@
                 "mimes": [
                     "image/jpg"
                 ]
-            }
-            "bidfloor": 5.0,
+            },
+            "video": {
+                "mimes": [
+                    "video/mp4",
+                    "video/mpeg"
+                ],
+                "minduration": 15,
+                "maxduration": 30,
+                "protocols": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "w": 1920,
+                "h": 1080,
+                "boxingallowed": 1,
+                "playbackmethod": [
+                    1
+                ]
+            },
             "pmp": {
                 "private_auction": 0,
                 "deals": [
@@ -32,13 +55,45 @@
                     }
                 ]
             },
-            "ext" : {
-                "deliverytime": "1638554551"
+            "ext": {
+                "dooh": {
+                    "qtyflt": 125.2,
+                    "qtytype": 1,
+                    "qtyvendor": "route.org.uk"
+                }
             }
-                
         }
     ],
+    "site": {
+        "id": "35740",
+        "domain": "mta.clearchannel.com",
+        "cat": [
+            "IAB1",
+            "IAB12"
+        ],
+        "publisher": {
+            "id": "3637",
+            "name": "Metropolitan Transportation Authority"
+        },
+        "ext": {
+            "data": {
+                "name": "oohspace.co.uk",
+                "segment": [
+                    {
+                        "id": "1001"
+                    },
+                    {
+                        "id": "1002"
+                    }
+                ]
+            },
+            "dooh": {
+                "venuetypeid": 301
+            }
+        }
+    },
     "device": {
+        "ua": "OOH Device 1.0",
         "geo": {
             "lat": 52.46475,
             "lon": -1.89271,
@@ -54,15 +109,6 @@
         "w": 576,
         "h": 288,
         "ppi": 3
-    },
-    "user": {
-        "ext": {
-            "dooh": {
-                "qtyflt": 125.2,
-                "qtyflt_type": 1,
-                "qtyflt_vendor": "route.org.uk"
-            }
-        }
     },
     "cur": "GBP"
 }
