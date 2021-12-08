@@ -5,7 +5,7 @@
         {
             "id": "1",
             "secure": 1,
-            "exp": 7200,
+            "exp": 360,
             "bidfloor": 5.0,
             "bidfloorcur": "GBP",
             "banner": {
@@ -58,7 +58,8 @@
                 "dooh": {
                     "qtyflt": 125.2,
                     "qtytype": 1,
-                    "qtyvendor": "route.org.uk"
+                    "qtyvendor": "route.org.uk",
+                    "deliverytime" : 1638985593
                 }
             }
         }
