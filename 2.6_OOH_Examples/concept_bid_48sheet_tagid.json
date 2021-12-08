@@ -4,7 +4,6 @@
     "imp": [
         {
             "id": "1",
-            "tagid": "1235461904",
             "secure": 1,
             "exp": 7200,
             "bidfloor": 5.0,
@@ -67,26 +66,11 @@
     "site": {
         "id": "35740",
         "domain": "global.com",
-        "cat": [
-            "IAB1",
-            "IAB12"
-        ],
         "publisher": {
             "id": "3637",
             "name": "Global Outdoor"
         },
         "ext": {
-            "data": {
-                "name": "oohspace.co.uk",
-                "segment": [
-                    {
-                        "id": "1001"
-                    },
-                    {
-                        "id": "1002"
-                    }
-                ]
-            },
             "dooh": {
                 "venuetypeid": 301
             }
@@ -108,7 +92,11 @@
         "devicetype": 8,
         "w": 576,
         "h": 288,
-        "ppi": 3
+        "ppi": 3,
+        "ifa": "1235461904",
+        "ext": {
+            "ifa_type": "ppid"
+        }
     },
     "cur": "GBP"
 }
