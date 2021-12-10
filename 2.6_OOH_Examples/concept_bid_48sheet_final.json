@@ -23,7 +23,10 @@
                 ],
                 "mimes": [
                     "image/jpg"
-                ]
+                ],
+                "ext": {
+                    "dur": 15
+                }
             },
             "video": {
                 "mimes": [
@@ -31,7 +34,7 @@
                     "video/mpeg"
                 ],
                 "minduration": 15,
-                "maxduration": 30,
+                "maxduration": 15,
                 "protocols": [
                     1,
                     2,
@@ -46,7 +49,7 @@
                 "h": 1920,
                 "boxingallowed": 0,
                 "playbackmethod": [
-                    1
+                    2
                 ]
             },
             "pmp": {
