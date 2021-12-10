@@ -80,7 +80,7 @@
             "id": "3637",
             "name": "Global Outdoor"
         },
-        "nwek":"sbjct"
+        "nwek": "sbjct"
     },
     "device": {
         "geo": {
@@ -101,7 +101,9 @@
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
-            "ifa_provider":"SPACE",
+            "ifa_provider": [
+                "oohspace.co.uk"
+            ],
             "dooh": {
                 "venuetypeid": 301
             }
