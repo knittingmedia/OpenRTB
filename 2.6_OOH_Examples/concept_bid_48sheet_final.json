@@ -9,12 +9,16 @@
             "bidfloor": 5.0,
             "bidfloorcur": "GBP",
             "banner": {
-                "w": 576,
-                "h": 288,
+                "w": 1080,
+                "h": 1920,
                 "format": [
                     {
-                        "w": 576,
-                        "h": 288
+                        "w": 1080,
+                        "h": 1920
+                    },
+                    {
+                        "w": 720,
+                        "h": 1366
                     }
                 ],
                 "mimes": [
@@ -38,9 +42,9 @@
                     7,
                     8
                 ],
-                "w": 576,
-                "h": 288,
-                "boxingallowed": 1,
+                "w": 1080,
+                "h": 1920,
+                "boxingallowed": 0,
                 "playbackmethod": [
                     1
                 ]
@@ -87,9 +91,9 @@
             "zip": "B5 7DP"
         },
         "devicetype": 8,
-        "w": 576,
-        "h": 288,
-        "ppi": 3,
+        "w": 1080,
+        "h": 1920,
+        "ppi": 72,
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
