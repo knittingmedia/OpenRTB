@@ -59,7 +59,7 @@
                     "qtyflt": 125.2,
                     "qtytype": 1,
                     "qtyvendor": "route.org.uk",
-                    "deliverytime" : 1638985593
+                    "deliverytime": 1638985593
                 }
             }
         }
@@ -70,11 +70,6 @@
         "publisher": {
             "id": "3637",
             "name": "Global Outdoor"
-        },
-        "ext": {
-            "dooh": {
-                "venuetypeid": 301
-            }
         }
     },
     "device": {
@@ -96,7 +91,10 @@
         "ppi": 3,
         "ifa": "1235461904",
         "ext": {
-            "ifa_type": "ppid"
+            "ifa_type": "ppid",
+            "dooh": {
+                "venuetypeid": 301
+            }
         }
     },
     "cur": "GBP"
