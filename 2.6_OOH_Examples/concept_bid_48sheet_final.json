@@ -101,6 +101,7 @@
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
+            "ifa_provider":"SPACE",
             "dooh": {
                 "venuetypeid": 301
             }
