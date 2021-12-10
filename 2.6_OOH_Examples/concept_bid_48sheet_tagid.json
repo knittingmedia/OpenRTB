@@ -60,7 +60,9 @@
                     "qtytype": 1,
                     "qtyvendor": "route.org.uk"
                 },
-                "deliverytime": 1638985593
+                "timing": {
+                    "deliverytime": 1638985593
+                }
             }
         }
     ],
@@ -73,7 +75,6 @@
         }
     },
     "device": {
-        "ua": "LED",
         "geo": {
             "lat": 52.46475,
             "lon": -1.89271,
