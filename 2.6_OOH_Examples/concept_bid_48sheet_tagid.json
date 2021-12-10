@@ -55,9 +55,11 @@
                 ]
             },
             "ext": {
-                "qtyflt": 125.2,
-                "qtytype": 1,
-                "qtyvendor": "route.org.uk",
+                "qty": {
+                    "qtyflt": 125.2,
+                    "qtytype": 1,
+                    "qtyvendor": "route.org.uk"
+                },
                 "deliverytime": 1638985593
             }
         }
