@@ -55,12 +55,10 @@
                 ]
             },
             "ext": {
-                "dooh": {
-                    "qtyflt": 125.2,
-                    "qtytype": 1,
-                    "qtyvendor": "route.org.uk",
-                    "deliverytime": 1638985593
-                }
+                "qtyflt": 125.2,
+                "qtytype": 1,
+                "qtyvendor": "route.org.uk",
+                "deliverytime": 1638985593
             }
         }
     ],
