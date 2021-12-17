@@ -1,0 +1,111 @@
+{
+    "id": "162059897743978051070",
+    "at": 1,
+    "imp": [
+        {
+            "id": "1",
+            "secure": 1,
+            "exp": 360,
+            "bidfloor": 5.0,
+            "bidfloorcur": "GBP",
+            "banner": {
+                "w": 1080,
+                "h": 1920,
+                "format": [
+                    {
+                        "w": 1080,
+                        "h": 1920
+                    },
+                    {
+                        "w": 720,
+                        "h": 1366
+                    }
+                ],
+                "mimes": [
+                    "image/jpg"
+                ],
+                "ext": {
+                    "dur": 15
+                }
+            },
+            "video": {
+                "mimes": [
+                    "video/mp4",
+                    "video/mpeg"
+                ],
+                "minduration": 15,
+                "maxduration": 15,
+                "protocols": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "w": 1080,
+                "h": 1920,
+                "boxingallowed": 0,
+                "playbackmethod": [
+                    2
+                ]
+            },
+            "pmp": {
+                "private_auction": 0,
+                "deals": [
+                    {
+                        "id": "123abc",
+                        "bidfloor": 3.5
+                    }
+                ]
+            },
+            "ext": {
+                "qty": {
+                    "qtyflt": 125.2,
+                    "qtytype": 1,
+                    "qtyvendor": "route.org.uk"
+                },
+                "timing": {
+                    "dlvytime": 1638985593
+                }
+            }
+        }
+    ],
+    "site": {
+        "id": "35740",
+        "domain": "global.com",
+        "publisher": {
+            "id": "3637",
+            "name": "Global Outdoor"
+        },
+        "nwek": "sbjct"
+    },
+    "device": {
+        "geo": {
+            "lat": 52.46475,
+            "lon": -1.89271,
+            "type": 1,
+            "lastfix": 9999999,
+            "country": "UK",
+            "region": "Midlands",
+            "metro": "West Midlands",
+            "city": "Birmingham",
+            "zip": "B5 7DP"
+        },
+        "devicetype": 8,
+        "w": 1080,
+        "h": 1920,
+        "ppi": 72,
+        "ifa": "1235461904",
+        "ext": {
+            "ifa_type": "ppid",
+            "ifa_provider": "oohspace.co.uk",
+            "dooh": {
+                "venuetypeid": 301
+            }
+        }
+    },
+    "cur": "GBP"
+}
