@@ -102,7 +102,25 @@
             "ifa_type": "ppid",
             "ifa_provider": "oohspace.co.uk",
             "dooh": {
-                "venuetypeid": 301
+                "venuetypeid": 301,
+                "eids": [
+                    {
+                        "source": "somethingelse.com",
+                        "uids": [
+                            {
+                                "id": "biggy346"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "somethingverydifferent.com",
+                        "uids": [
+                            {
+                                "id": "hugescreen700"
+                            }
+                        ]
+                    }
+                ]
             }
         }
     },
