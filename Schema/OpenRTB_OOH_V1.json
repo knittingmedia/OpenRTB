@@ -4,5 +4,15 @@
   "title": "OpenRTB OOH V1",
   "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard",
   "type": "object"
-  "properties" : {}
+  "properties": {
+    "productId": {
+      "description": "The unique identifier for a product",
+      "type": "integer"
+    },
+    "productName": {
+      "description": "Name of the product",
+      "type": "string"
+    }
+  },
+  "required": [ "productId", "productName" ]
 }
