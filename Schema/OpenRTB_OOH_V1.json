@@ -5,14 +5,46 @@
   "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard",
   "type": "object",
   "properties": {
-    "productId": {
-      "description": "The unique identifier for a product",
+    "id": {
+      "description": "Unique ID of the bid request, provided by the exchange",
+      "type": "string"
+    },
+    "imp": {
+      "description": "Array of imp objectsrepresenting the impressions offered. At least 1 Imp object is required",
+      "type": "object",
+      "properties": {
+
+      }
+    },
+    "site":{
+      "description": "Details via a Site objectabout the publishers website",
+      "type": "object",
+      "properties": {
+
+      }
+    },
+    "device":{
+      "description": "Details via a Device object (Section 3.2.18) about the users device to which the impression will be delivered",
+      "type": "object",
+      "properties": {
+
+      }
+    },
+    "at": {
+      "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
       "type": "integer"
     },
-    "productName": {
-      "description": "Name of the product",
-      "type": "string"
+    "cur": {
+      "description": "Array of allowed currencies for bids on this bid request using ISO-4217 alpha codes. Recommended only if the exchange accepts multiple currencies",
+      "type": "array"
     }
   },
-  "required": [ "productId", "productName" ]
+  "required": [
+    "id",
+    "imp",
+    "site",
+    "device",
+    "at",
+    "cur"
+  ]
 }
