@@ -72,7 +72,7 @@
           "description": "Domain of the site (e.g., “knitting.media”)",
           "type": "string"
         },
-        "publisher" :{
+        "publisher": {
           "description": "Details about the Publisher of the site.",
           "type": "object",
           "properties": {}
@@ -82,7 +82,39 @@
     "device": {
       "description": "Details via a Device object (Section 3.2.18) about the users device to which the impression will be delivered",
       "type": "object",
-      "properties": {}
+      "properties": {
+        "geo": {
+          "description": "Location of the device assumed to be the users current location defined by a Geo object",
+          "type": "object",
+          "properties": {}
+        },
+        "devicetype": {
+          "description": "Digital out of home devices shall be identified as type 8",
+          "type": "integer",
+          "default": 8
+        },
+        "h": {
+          "description": "Physical height of the screen in pixels",
+          "type": "integer"
+        },
+        "w": {
+          "description": "Physical width of the screen in pixels",
+          "type": "integer"
+        },
+        "ppi": {
+          "description": "Screen size as pixels per linear inch. Screen dimensions in inches can be calculated using the ppi value, w and h",
+          "type": "integer"
+        },
+        "ifa": {
+          "description": "A device ID used to identify an individual out of home device.",
+          "type": "string"
+        },
+        "ext": {
+          "description": "Placeholder for community extensions to OpenRTB",
+          "type": "object",
+          "properties": {}
+        }
+      }
     },
     "at": {
       "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
