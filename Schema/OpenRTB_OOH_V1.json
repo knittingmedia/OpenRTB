@@ -243,7 +243,39 @@
           "description": "Placeholder for community extensions to OpenRTB",
           "type": "object",
           "properties": {
-            
+            "ifa_type": {
+              "description": "For DOOH this is given as ppid to show this is a publisher-provided device id or sspid to show this is an exchange-provided device id",
+              "type": "string",
+              "enum": [
+                "ppid",
+                "sspid"
+              ]
+            },
+            "eids": {
+              "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "source": {
+                    "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
+                    "type": "string"
+                  },
+                  "ids": {
+                    "description": "Array of extended IDs from the given source",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "ext": {
+                    "description": "Placeholder for community extensions to OpenRTB",
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
           }
         }
       }
