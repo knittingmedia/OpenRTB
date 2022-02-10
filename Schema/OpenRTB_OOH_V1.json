@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://github.com/knittingmedia/OpenRTB/blob/main/Schema/OpenRTB_OOH_V1.json",
   "title": "OpenRTB OOH V1",
-  "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard",
+  "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard. V1.0 by Tim Harvey 10Feb22",
   "type": "object",
   "properties": {
     "id": {
@@ -20,12 +20,80 @@
         "banner": {
           "description": "A Banner object; required if this impression is offered as a banner ad opportunity.",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "format": {
+              "description": "Array of format objects representing the banner sizes permitted. If none are specified, then use of the h and w attributes is highly recommended",
+              "type": "array",
+              "properties": {}
+            },
+            "w": {
+              "description": "Exact width in device-independent pixels (DIPS); recommended if no format objects are specified",
+              "type": "integer"
+            },
+            "h": {
+              "description": "Exact height in device-independent pixels (DIPS); recommended if no format objects are specified",
+              "type": "integer"
+            },
+            "mimes": {
+              "description": "Content MIME types supported. Popular MIME types may include, “image/jpeg” and “image/gif”.",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "ext": {
+              "description": "Placeholder for community extensions to OpenRTB",
+              "type": "object",
+              "properties": {}
+            }
+          }
         },
         "video": {
           "description": "A Video object; required if this impression is offered as a video ad opportunity.",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "mimes": {
+              "description": "Content MIME types supported (e.g., “video/mp4”)",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "minduration": {
+              "description": "Minimum video ad duration in seconds. This field is mutually exclusive with rqddurs; only one of minduration and rqddurs may be in a bid request",
+              "type": "integer"
+            },
+            "maxduration": {
+              "description": "Maximum video ad duration in seconds. This field is mutually exclusive with rqddurs; only one of maxduration and rqddurs may be in a bid request",
+              "type": "integer"
+            },
+            "protocols": {
+              "description": "Array of supported video protocols. Refer to List: Creative Subtypes - Audio/Video in AdCOM 1.0",
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "w": {
+              "description": "Width of the video player in device independent pixels (DIPS)",
+              "type": "integer"
+            },
+            "h": {
+              "description": "Height of the video player in device independent pixels (DIPS)",
+              "type": "integer"
+            },
+            "boxingallowed": {
+              "description": "Indicates if letter-boxing of a:b content into a c:d window is allowed, where 0 = no, 1 = yes. For DOOH, when boxingallowed = 0, the video aspect ratio should strictly match that of the placement, as determined by the video w and h fields. ",
+              "type": "integer"
+            },
+            "playbackmethod": {
+              "description": "Playback methods that may be in use. If none are specified, any method may be used. Refer to List: Playback Methods in AdCOM 1.0. Only one method is typically used in practice. As a result, this array may be converted to an integer in a future version of the specification. It is strongly advised to use only the first element of this array in preparation for this change",
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          }
         },
         "audio": {
           "description": "An Audio object; required if this impression is offered as an audio ad opportunity. Schema to be confirmed for OOH",
@@ -35,7 +103,20 @@
         "pmp": {
           "description": "A Pmp object containing any private marketplace deals in effect for this impression",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "private_auction": {
+              "description": "Indicator of auction eligibility to seats named in the Direct Deals object, where 0 = all bids are accepted, 1 = bids are restricted to the deals specified and the terms thereof",
+              "type": "integer",
+              "default": 0
+            },
+            "deals": {
+              "description": "Array of Deal objects that convey the specific deals applicable to this impression",
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
         },
         "bidfloor": {
           "description": "Minimum bid for this impression expressed in CPM",
@@ -56,7 +137,34 @@
         "ext": {
           "description": "Placeholder for community extensions to OpenRTB",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "qty": {
+              "description": "impression mulitplier object",
+              "type": "object",
+              "properties": {
+                "multiplier": {
+                  "description": "The quantity of billable events which will be deemed to have occurred if this item is purchased. For example, a DOOH opportunity may be considered to be 14.2 impressions. This is the same as the qtyflt field in OpenRTB 3.0",
+                  "type": "number"
+                },
+                "multipliertype": {
+                  "description": "The source type of the quantity measurement. 0=unknown, 1=Measurement Vendor Provided, 2=Publisher Provided, 3=Exchange Provided",
+                  "type": "integer"
+                },
+                "multipliervendor": {
+                  "description": "The top level business domain name of the measurement vendor providing the quantity measurement",
+                  "type": "string"
+                }
+              }
+            },
+            "dt": {
+              "description": "The exposure time in seconds per view that the creative will be displayed before refreshing to the next creative",
+              "type": "number"
+            },
+            "etime": {
+              "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
+              "type": "integer"
+            }
+          }
         }
       }
     },
@@ -75,7 +183,16 @@
         "publisher": {
           "description": "Details about the Publisher of the site.",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "id": {
+              "description": "Exchange-specific seller ID. Every id must map to only a single entity that is paid for inventory transacted via that id. Corresponds to a seller_id of a seller in the exchanges sellers.json file",
+              "type": "string"
+            },
+            "name": {
+              "description": "Seller name (may be aliased at the seller’s request)",
+              "type": "string"
+            }
+          }
         }
       }
     },
