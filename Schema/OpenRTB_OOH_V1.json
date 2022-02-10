@@ -203,7 +203,20 @@
         "geo": {
           "description": "Location of the device assumed to be the users current location defined by a Geo object",
           "type": "object",
-          "properties": {}
+          "properties": {
+            "lat": {
+              "description": "Latitude from -90.0 to +90.0, where negative is south",
+              "type": "number"
+            },
+            "long": {
+              "description": "Longitude from -180.0 to +180.0, where negative is west",
+              "type": "number"
+            },
+            "lastfix": {
+              "description": "Number of seconds since this geolocation fix was established. Note that devices may cache location data across multiple fetches. Ideally, this value should be from the time the actual fix was taken (Optional for DOOH)",
+              "type": "integer"
+            }
+          }
         },
         "devicetype": {
           "description": "Digital out of home devices shall be identified as type 8",
@@ -229,7 +242,9 @@
         "ext": {
           "description": "Placeholder for community extensions to OpenRTB",
           "type": "object",
-          "properties": {}
+          "properties": {
+            
+          }
         }
       }
     },
