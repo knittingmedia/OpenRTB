@@ -63,7 +63,21 @@
     "site": {
       "description": "Details via a Site objectabout the publishers website",
       "type": "object",
-      "properties": {}
+      "properties": {
+        "id": {
+          "description": "Exchange-specific site ID",
+          "type": "string"
+        },
+        "domain": {
+          "description": "Domain of the site (e.g., “knitting.media”)",
+          "type": "string"
+        },
+        "publisher" :{
+          "description": "Details about the Publisher of the site.",
+          "type": "object",
+          "properties": {}
+        }
+      }
     },
     "device": {
       "description": "Details via a Device object (Section 3.2.18) about the users device to which the impression will be delivered",
