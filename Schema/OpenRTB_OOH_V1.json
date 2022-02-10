@@ -189,7 +189,7 @@
               "type": "string"
             },
             "name": {
-              "description": "Seller name (may be aliased at the seller’s request)",
+              "description": "Seller name (may be aliased at the sellers request)",
               "type": "string"
             }
           }
