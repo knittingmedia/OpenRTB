@@ -10,25 +10,65 @@
       "type": "string"
     },
     "imp": {
-      "description": "Array of imp objectsrepresenting the impressions offered. At least 1 Imp object is required",
+      "description": "Array of imp objects representing the impressions offered. At least 1 Imp object is required",
       "type": "object",
       "properties": {
-
+        "id": {
+          "description": "A unique identifier for this impression within the context of the bid request (typically, starts with 1 and increments)",
+          "type": "string"
+        },
+        "banner": {
+          "description": "A Banner object; required if this impression is offered as a banner ad opportunity.",
+          "type": "object",
+          "properties": {}
+        },
+        "video": {
+          "description": "A Video object; required if this impression is offered as a video ad opportunity.",
+          "type": "object",
+          "properties": {}
+        },
+        "audio": {
+          "description": "An Audio object; required if this impression is offered as an audio ad opportunity. Schema to be confirmed for OOH",
+          "type": "object",
+          "properties": {}
+        },
+        "pmp": {
+          "description": "A Pmp object containing any private marketplace deals in effect for this impression",
+          "type": "object",
+          "properties": {}
+        },
+        "bidfloor": {
+          "description": "Minimum bid for this impression expressed in CPM",
+          "type": "number"
+        },
+        "bidfloorcur": {
+          "description": "Currency specified using ISO-4217 alpha codes. This may be different from bid currency returned by bidder if this is allowed by the exchange",
+          "type": "string"
+        },
+        "secure": {
+          "description": "Flag to indicate if the impression requires secure HTTPS URL creative assets and markup, where 0 = non-secure, 1 = secure. If omitted, the secure state is unknown, but non- secure HTTP support can be assumed",
+          "type": "integer"
+        },
+        "exp": {
+          "description": "Advisory as to the number of seconds that may elapse between the auction and the actual impression",
+          "type": "integer"
+        },
+        "ext": {
+          "description": "Placeholder for community extensions to OpenRTB",
+          "type": "object",
+          "properties": {}
+        }
       }
     },
-    "site":{
+    "site": {
       "description": "Details via a Site objectabout the publishers website",
       "type": "object",
-      "properties": {
-
-      }
+      "properties": {}
     },
-    "device":{
+    "device": {
       "description": "Details via a Device object (Section 3.2.18) about the users device to which the impression will be delivered",
       "type": "object",
-      "properties": {
-
-      }
+      "properties": {}
     },
     "at": {
       "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
@@ -36,7 +76,10 @@
     },
     "cur": {
       "description": "Array of allowed currencies for bids on this bid request using ISO-4217 alpha codes. Recommended only if the exchange accepts multiple currencies",
-      "type": "array"
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [
