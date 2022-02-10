@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.com/product.schema.json",
-  "title": "Product",
-  "description": "A product in the catalog",
+  "$id": "https://github.com/knittingmedia/OpenRTB/blob/main/Schema/OpenRTB_OOH_V1.json",
+  "title": "OpenRTB OOH V1",
+  "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard",
   "type": "object"
+  "properties" : {}
 }
