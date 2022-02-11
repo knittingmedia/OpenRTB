@@ -108,7 +108,11 @@
               "private_auction": {
                 "description": "Indicator of auction eligibility to seats named in the Direct Deals object, where 0 = all bids are accepted, 1 = bids are restricted to the deals specified and the terms thereof",
                 "type": "integer",
-                "default": 0
+                "default": 0,
+                "enum": [
+                  0,
+                  1
+                ]
               },
               "deals": {
                 "description": "Array of Deal objects that convey the specific deals applicable to this impression",
