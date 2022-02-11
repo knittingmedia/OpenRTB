@@ -118,7 +118,20 @@
                 "description": "Array of Deal objects that convey the specific deals applicable to this impression",
                 "type": "array",
                 "items": {
-                  "type": "object"
+                  "properties": {
+                    "id": {
+                      "description": "A unique identifier for deal",
+                      "type": "string"
+                    },
+                    "bidfloor": {
+                      "description": "Minimum bid for this impression expressed in CPM",
+                      "type": "number"
+                    },
+                    "at": {
+                      "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
+                      "type": "integer"
+                    }
+                  }
                 }
               }
             }
