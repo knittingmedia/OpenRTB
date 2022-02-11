@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/knittingmedia/OpenRTB/main/Schema/OpenRTB_OOH_V1.json",
     "id": "162059897743978051070",
     "at": 1,
     "imp": [
@@ -106,5 +107,5 @@
             }
         }
     },
-    "cur": "GBP"
+    "cur": ["USD"]
 }
