@@ -13,7 +13,6 @@
       "description": "Array of imp objects representing the impressions offered. At least 1 Imp object is required",
       "type": "array",
       "items": {
-        
         "properties": {
           "id": {
             "description": "A unique identifier for this impression within the context of the bid request (typically, starts with 1 and increments)",
