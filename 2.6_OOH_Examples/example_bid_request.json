@@ -23,24 +23,24 @@
                     }
                 ],
                 "mimes": [
-                    "image/jpg","image/png"
+                    "image/jpg",
+                    "image/png"
                 ]
             },
             "pmp": {
                 "private_auction": 0,
                 "deals": [
-                    {
-                        "id": "123abc",
-                        "bidfloor": 3.5
-                    }
+                    
                 ]
             },
             "ext": {
                 "qty": {
                     "multiplier": 14.2,
-                    "multipliertype": 0
-                }
-
+                    "multipliertype": 0,
+                    "multipliervendor": "Route.org.uk"
+                },
+                "dt": 10,
+                "etime": 1644565955
             }
         }
     ],
@@ -54,15 +54,9 @@
     },
     "device": {
         "geo": {
-            "lat": 52.46475,
-            "lon": -1.89271,
-            "type": 1,
-            "lastfix": 9999999,
-            "country": "UK",
-            "region": "Midlands",
-            "metro": "West Midlands",
-            "city": "Birmingham",
-            "zip": "B5 7DP"
+        "lat": 0,
+        "long": 0,
+        "lastfix": 0
         },
         "devicetype": 8,
         "w": 1080,
@@ -71,11 +65,10 @@
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
-            "ifa_provider": "oohspace.co.uk",
-            "dooh": {
-                "venuetypeid": 301,
-            }
+ 
         }
     },
-    "cur": ["USD"]
+    "cur": [
+        "USD"
+    ]
 }
