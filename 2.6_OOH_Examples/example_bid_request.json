@@ -4,7 +4,7 @@
     "at": 1,
     "imp": [
         {
-            "id": "1",
+            "id": "007",
             "secure": 1,
             "exp": 360,
             "bidfloor": 5.0,
@@ -23,34 +23,7 @@
                     }
                 ],
                 "mimes": [
-                    "image/jpg"
-                ],
-                "ext": {
-                    "dur": 15
-                }
-            },
-            "video": {
-                "mimes": [
-                    "video/mp4",
-                    "video/mpeg"
-                ],
-                "minduration": 15,
-                "maxduration": 15,
-                "protocols": [
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7,
-                    8
-                ],
-                "w": 1080,
-                "h": 1920,
-                "boxingallowed": 0,
-                "playbackmethod": [
-                    2
+                    "image/jpg","image/png"
                 ]
             },
             "pmp": {
@@ -64,13 +37,10 @@
             },
             "ext": {
                 "qty": {
-                    "qtyflt": 125.2,
-                    "qtytype": 1,
-                    "qtyvendor": "route.org.uk"
-                },
-                "timing": {
-                    "dlvytime": 1638985593
+                    "multiplier": 14.2,
+                    "multipliertype": 0
                 }
+
             }
         }
     ],
