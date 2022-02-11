@@ -65,6 +65,7 @@
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
+            "dooh": {"eids": [],"venuetypeid": ""}
  
         }
     },
