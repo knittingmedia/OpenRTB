@@ -11,7 +11,7 @@
     },
     "imp": {
       "description": "Array of imp objects representing the impressions offered. At least 1 Imp object is required",
-      "type": "array",
+      "type": "object",
       "items": {
         "type": "object",
         "properties": {
