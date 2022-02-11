@@ -280,7 +280,6 @@
               "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
               "type": "array",
               "items": {
-                "type": "object",
                 "properties": {
                   "source": {
                     "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
