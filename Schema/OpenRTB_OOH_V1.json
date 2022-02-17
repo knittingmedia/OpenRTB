@@ -184,13 +184,11 @@
                 "description": "The exposure time in seconds per view that the creative will be displayed before refreshing to the next creative",
                 "type": "number"
               }
-              
             }
           }
         }
       }
     },
-
     "device": {
       "description": "Details via a Device object (Section 3.2.18) about the users device to which the impression will be delivered",
       "type": "object",
