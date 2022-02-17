@@ -62,7 +62,9 @@
             "ifa_type": "ppid",
             "eids": [
                 {
-                    "ids": ["1235461904"], 
+                    "ids": [
+                        "1235461904"
+                    ],
                     "source": "oohspace.co.uk"
                 },
                 {
@@ -84,9 +86,12 @@
         "id": "15790",
         "keywords": "Roadside, Billboard, D96",
         "name": "This",
-        "publisher": {"id": "G1", "name": "Global" },
+        "publisher": {
+            "id": "G1",
+            "name": "Global"
+        },
         "venuetax": 1,
-        "venuetypeid":404
+        "venuetypeid": 404
     },
     "cur": [
         "USD"
