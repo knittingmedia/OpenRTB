@@ -47,19 +47,11 @@
             }
         }
     ],
-    "site": {
-        "id": "35740",
-        "domain": "global.com",
-        "publisher": {
-            "id": "3637",
-            "name": "Global Outdoor"
-        }
-    },
     "device": {
         "geo": {
-        "lat": 0,
-        "long": 0,
-        "lastfix": 0
+            "lat": 0,
+            "long": 0,
+            "lastfix": 0
         },
         "devicetype": 8,
         "w": 1080,
@@ -68,9 +60,33 @@
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
-            "dooh": {"eids": [],"venuetypeid": ""}
- 
+            "eids": [
+                {
+                    "ids": ["1235461904"], 
+                    "source": "oohspace.co.uk"
+                },
+                {
+                    "ids": [
+                        "G456",
+                        "Gosh, Its A Biggun"
+                    ],
+                    "source": "Global.com"
+                }
+            ]
         }
+    },
+    "dooh": {
+        "cat": [],
+        "catax": 0,
+        "content": "",
+        "dpi": 8,
+        "etime": 12345670,
+        "id": "15790",
+        "keywords": "Roadside, Billboard, D96",
+        "name": "This",
+        "publisher": {"id": "G1", "name": "Global" },
+        "venuetax": 1,
+        "venuetypeid":404
     },
     "cur": [
         "USD"
