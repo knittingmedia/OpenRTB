@@ -30,7 +30,11 @@
             "pmp": {
                 "private_auction": 0,
                 "deals": [
-                    
+                    {
+                        "id": "123",
+                        "at": 1,
+                        "bidfloor": 4.50
+                    }
                 ]
             },
             "ext": {
@@ -39,8 +43,7 @@
                     "multipliertype": 0,
                     "multipliervendor": "Route.org.uk"
                 },
-                "dt": 10,
-                "etime": 1644565955
+                "dt": 10
             }
         }
     ],
