@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft-07/schema",
   "$id": "https://github.com/knittingmedia/OpenRTB/blob/main/Schema/OpenRTB_OOH_V1.json",
   "title": "OpenRTB OOH V1",
-  "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard. V1.0 by Tim Harvey 10Feb22",
+  "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard. V1.0 by Tim Harvey 17Feb22",
   "type": "object",
   "properties": {
     "id": {
@@ -183,11 +183,8 @@
               "dt": {
                 "description": "The exposure time in seconds per view that the creative will be displayed before refreshing to the next creative",
                 "type": "number"
-              },
-              "etime": {
-                "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
-                "type": "integer"
               }
+              
             }
           }
         }
@@ -204,20 +201,6 @@
         "domain": {
           "description": "Domain of the site (e.g., “knitting.media”)",
           "type": "string"
-        },
-        "publisher": {
-          "description": "Details about the Publisher of the site.",
-          "type": "object",
-          "properties": {
-            "id": {
-              "description": "Exchange-specific seller ID. Every id must map to only a single entity that is paid for inventory transacted via that id. Corresponds to a seller_id of a seller in the exchanges sellers.json file",
-              "type": "string"
-            },
-            "name": {
-              "description": "Seller name (may be aliased at the sellers request)",
-              "type": "string"
-            }
-          }
         }
       }
     },
@@ -338,17 +321,55 @@
           "type": "integer"
         },
         "venuetax": {
-          "description": "The venue taxonomy in use. Refer to ",
+          "description": "The venue taxonomy in use. 1 = OpenOOH - Digital Out-of-Home Screen Venue Types 1.0.x, 2 = DPAA Device Venue ",
           "type": "integer",
-          "default":1
+          "default": 1,
+          "enum": [
+            1,
+            2
+          ]
         },
-        "cat": {},
-        "catax": {},
-        "publisher": {},
-        "dpi": {},
-        "etime": {},
-        "keywords": {},
-        "content": {},
+        "cat": {
+          "description": "Array of IAB content categories of the app. The taxonomy to be used is defined by the cattax field. If no cattax field is supplied IAB Content Category Taxonomy 1.0 is assumed",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "catax": {
+          "description": "The taxonomy in use. Refer to the AdCOM list List: Category Taxonomies for values. https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list--category-taxonomies-",
+          "type": "integer"
+        },
+        "publisher": {
+          "description": "Details about the Publisher of the site.",
+          "type": "object",
+          "properties": {
+            "id": {
+              "description": "Exchange-specific seller ID. Every id must map to only a single entity that is paid for inventory transacted via that id. Corresponds to a seller_id of a seller in the exchanges sellers.json file",
+              "type": "string"
+            },
+            "name": {
+              "description": "Seller name (may be aliased at the sellers request)",
+              "type": "string"
+            }
+          }
+        },
+        "dpi": {
+          "description": "Minimum DPI for text-based creative elements to display clearly",
+          "type": "integer"
+        },
+        "etime": {
+          "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
+          "type": "integer"
+        },
+        "keywords": {
+          "description": "Comma separated list of keywords about the DOOH placement",
+          "type": "string"
+        },
+        "content": {
+          "description": "Details about the Content (https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#object--content-) within the DOOH placement.",
+          "type": "string"
+        },
         "ext": {
           "description": "Placeholder for community extensions to OpenRTB",
           "type": "object",
