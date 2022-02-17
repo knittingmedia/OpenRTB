@@ -244,32 +244,26 @@
                 "sspid"
               ]
             },
-            "dooh": {
-              "description": "dooh extentions",
-              "type": "object",
-              "properties": {
-                "eids": {
-                  "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
-                  "type": "array",
-                  "items": {
-                    "properties": {
-                      "source": {
-                        "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
-                        "type": "string"
-                      },
-                      "ids": {
-                        "description": "Array of extended IDs from the given source",
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "ext": {
-                        "description": "Placeholder for community extensions to OpenRTB",
-                        "type": "object",
-                        "properties": {}
-                      }
+            "eids": {
+              "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
+              "type": "array",
+              "items": {
+                "properties": {
+                  "source": {
+                    "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
+                    "type": "string"
+                  },
+                  "ids": {
+                    "description": "Array of extended IDs from the given source",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
                     }
+                  },
+                  "ext": {
+                    "description": "Placeholder for community extensions to OpenRTB",
+                    "type": "object",
+                    "properties": {}
                   }
                 }
               }
