@@ -303,10 +303,6 @@
                       }
                     }
                   }
-                },
-                "venuetypeid": {
-                  "description": "Identification of the type of venue the dooh device is in. See https://github.com/openooh/venue-taxonomy/blob/main/specification-1.1.md",
-                  "type": "string"
                 }
               }
             }
@@ -329,10 +325,23 @@
       "description": "This object should be included if the ad supported content is an out-of-home screen. A bid request with a dooh object must not contain a site or app object. At a minimum, it is useful to provide id and/or venuetypeid, but this is not strictly required",
       "type": "object",
       "properties": {
-        "id": {},
-        "name": {},
-        "venuetypeid": {},
-        "venuetax": {},
+        "id": {
+          "description": "Exchange provided id for a placement or logical grouping of placements",
+          "type": "string"
+        },
+        "name": {
+          "description": "Name of DOOH placement",
+          "type": "string"
+        },
+        "venuetypeid": {
+          "description": "Identification of the type of venue the dooh device is in. See https://github.com/openooh/venue-taxonomy/blob/main/specification-1.1.md",
+          "type": "integer"
+        },
+        "venuetax": {
+          "description": "The venue taxonomy in use. Refer to ",
+          "type": "integer",
+          "default":1
+        },
         "cat": {},
         "catax": {},
         "publisher": {},
