@@ -365,5 +365,13 @@
     "at",
     "cur",
     "dooh"
+  ],
+  "enum":[
+    "id",
+    "imp",
+    "device",
+    "at",
+    "cur",
+    "dooh"
   ]
 }
