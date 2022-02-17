@@ -49,8 +49,8 @@
     ],
     "device": {
         "geo": {
-            "lat": 0,
-            "long": 0,
+            "lat": 0.0001,
+            "long": -0.1235,
             "lastfix": 0
         },
         "devicetype": 8,
