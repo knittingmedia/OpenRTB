@@ -190,20 +190,7 @@
         }
       }
     },
-    "site": {
-      "description": "Details via a Site objectabout the publishers website",
-      "type": "object",
-      "properties": {
-        "id": {
-          "description": "Exchange-specific site ID",
-          "type": "string"
-        },
-        "domain": {
-          "description": "Domain of the site (e.g., “knitting.media”)",
-          "type": "string"
-        }
-      }
-    },
+
     "device": {
       "description": "Details via a Device object (Section 3.2.18) about the users device to which the impression will be delivered",
       "type": "object",
@@ -381,7 +368,6 @@
   "required": [
     "id",
     "imp",
-    "site",
     "device",
     "at",
     "cur",
