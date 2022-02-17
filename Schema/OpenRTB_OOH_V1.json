@@ -324,6 +324,28 @@
       "items": {
         "type": "string"
       }
+    },
+    "dooh": {
+      "description": "This object should be included if the ad supported content is an out-of-home screen. A bid request with a dooh object must not contain a site or app object. At a minimum, it is useful to provide id and/or venuetypeid, but this is not strictly required",
+      "type": "object",
+      "properties": {
+        "id": {},
+        "name": {},
+        "venuetypeid": {},
+        "venuetax": {},
+        "cat": {},
+        "catax": {},
+        "publisher": {},
+        "dpi": {},
+        "etime": {},
+        "keywords": {},
+        "content": {},
+        "ext": {
+          "description": "Placeholder for community extensions to OpenRTB",
+          "type": "object",
+          "properties": {}
+        }
+      }
     }
   },
   "required": [
@@ -332,6 +354,7 @@
     "site",
     "device",
     "at",
-    "cur"
+    "cur",
+    "dooh"
   ]
 }
