@@ -323,6 +323,10 @@
             }
           }
         },
+        "domain": {
+          "description": "Domain of the inventory (ads.txt) owner (e.g., “mysite.foo.com”).",
+          "type": "string"
+        },
         "etime": {
           "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
           "type": "integer"
