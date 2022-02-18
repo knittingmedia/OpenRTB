@@ -309,17 +309,6 @@
             2
           ]
         },
-        "cat": {
-          "description": "Array of IAB content categories of the app. The taxonomy to be used is defined by the cattax field. If no cattax field is supplied IAB Content Category Taxonomy 1.0 is assumed",
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "catax": {
-          "description": "The taxonomy in use. Refer to the AdCOM list List: Category Taxonomies for values. https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#list--category-taxonomies-",
-          "type": "integer"
-        },
         "publisher": {
           "description": "Details about the Publisher of the site.",
           "type": "object",
