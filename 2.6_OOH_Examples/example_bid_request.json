@@ -61,21 +61,18 @@
         "ext": {
             "ifa_type": "ppid",
             "eids": {
-                "source": "",
+                "source": "oohspace.co.uk",
                 "uids": [
                     {
-                        "atype": 0,
-                        "id": ""
+                        "atype": 501,
+                        "id": "1235461904"
                     }
                 ]
             }
         }
     },
     "dooh": {
-        "cat": [],
-        "catax": 0,
-        "content": "",
-        "dpi": 8,
+        "content": {},
         "etime": 12345670,
         "id": "15790",
         "keywords": "Roadside, Billboard, D96",
@@ -84,10 +81,11 @@
             "id": "G1",
             "name": "Global"
         },
+        "domain": "www.global.com/ads.txt",
         "venuetax": 1,
-        "venuetypeid": 404
+        "venuetypeid": 30101
     },
     "cur": [
-        "USD"
+        "GBP"
     ]
 }
