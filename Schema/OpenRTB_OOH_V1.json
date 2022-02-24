@@ -272,11 +272,6 @@
                       }
                     }
                   }
-                },
-                "ext": {
-                  "description": "Placeholder for community extensions to OpenRTB",
-                  "type": "object",
-                  "properties": {}
                 }
               }
             }
