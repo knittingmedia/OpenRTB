@@ -1,0 +1,9 @@
+{
+    "$schema": "https://raw.githubusercontent.com/knittingmedia/OpenRTB/main/Schema/OpenRTB_OOH_V1.json",
+   "id": "",
+   "at": 1,
+   "cur": [],
+   "device": {},
+   "dooh": {},
+   "imp": []
+}
