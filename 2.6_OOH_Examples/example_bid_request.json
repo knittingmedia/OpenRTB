@@ -60,21 +60,15 @@
         "ifa": "1235461904",
         "ext": {
             "ifa_type": "ppid",
-            "eids": [
-                {
-                    "ids": [
-                        "1235461904"
-                    ],
-                    "source": "oohspace.co.uk"
-                },
-                {
-                    "ids": [
-                        "G456",
-                        "Gosh, Its A Biggun"
-                    ],
-                    "source": "Global.com"
-                }
-            ]
+            "eids": {
+                "source": "",
+                "uids": [
+                    {
+                        "atype": 0,
+                        "id": ""
+                    }
+                ]
+            }
         }
     },
     "dooh": {
