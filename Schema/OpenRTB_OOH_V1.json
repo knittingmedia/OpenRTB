@@ -130,7 +130,10 @@
                     "at": {
                       "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
                       "type": "integer",
-                      "enum":[1,2]
+                      "enum": [
+                        1,
+                        2
+                      ]
                     }
                   }
                 }
@@ -247,25 +250,33 @@
             },
             "eids": {
               "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
-              "type": "array",
-              "items": {
-                "properties": {
-                  "source": {
-                    "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
-                    "type": "string"
-                  },
-                  "ids": {
-                    "description": "Array of extended IDs from the given source",
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
-                  },
-                  "ext": {
-                    "description": "Placeholder for community extensions to OpenRTB",
+              "type": "object",
+              "properties": {
+                "source": {
+                  "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
+                  "type": "string"
+                },
+                "uids": {
+                  "description": "Array of extended ID UID objects from the given source.",
+                  "type": "array",
+                  "items": {
                     "type": "object",
-                    "properties": {}
+                    "properties": {
+                      "id": {
+                        "description": "Cookie or platform-native identifier.",
+                        "type": "string"
+                      },
+                      "atype": {
+                        "description": "Type of user agent the match is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to List: Agent Types in AdCOM 1.0",
+                        "type": "integer"
+                      }
+                    }
                   }
+                },
+                "ext": {
+                  "description": "Placeholder for community extensions to OpenRTB",
+                  "type": "object",
+                  "properties": {}
                 }
               }
             }
@@ -337,7 +348,7 @@
         },
         "content": {
           "description": "Details about the Content (https://github.com/InteractiveAdvertisingBureau/AdCOM/blob/master/AdCOM%20v1.0%20FINAL.md#object--content-) within the DOOH placement.",
-          "type": "string"
+          "type": "object"
         },
         "ext": {
           "description": "Placeholder for community extensions to OpenRTB",
@@ -355,7 +366,7 @@
     "cur",
     "dooh"
   ],
-  "enum":[
+  "enum": [
     "id",
     "imp",
     "device",
