@@ -359,8 +359,7 @@
     "device",
     "at",
     "cur",
-    "dooh",
-    "$schema"
+    "dooh"
   ],
   "enum": [
     "id",
@@ -368,7 +367,6 @@
     "device",
     "at",
     "cur",
-    "dooh",
-    "$schema"
+    "dooh"
   ]
 }
