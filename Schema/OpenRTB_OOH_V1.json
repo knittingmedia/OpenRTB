@@ -281,7 +281,11 @@
     },
     "at": {
       "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
-      "type": "integer"
+      "type": "integer",
+      "enum": [
+        1,
+        2
+      ]
     },
     "cur": {
       "description": "Array of allowed currencies for bids on this bid request using ISO-4217 alpha codes. Recommended only if the exchange accepts multiple currencies",
