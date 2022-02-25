@@ -39,6 +39,7 @@
                     }
                 ]
             },
+            "dt": 12345670,
             "qty": {
                 "multiplier": 14.2,
                 "multipliertype": 0,
@@ -70,7 +71,6 @@
     },
     "dooh": {
         "content": {},
-        "dt": 12345670,
         "id": "15790",
         "keywords": "Roadside, Billboard, D96",
         "name": "This",
