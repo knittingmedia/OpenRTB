@@ -27,7 +27,7 @@
                     "image/png",
                     "text/html"
                 ],
-                "dt": 10
+                "etime": 10
             },
             "pmp": {
                 "private_auction": 0,
@@ -70,7 +70,7 @@
     },
     "dooh": {
         "content": {},
-        "etime": 12345670,
+        "dt": 12345670,
         "id": "15790",
         "keywords": "Roadside, Billboard, D96",
         "name": "This",
