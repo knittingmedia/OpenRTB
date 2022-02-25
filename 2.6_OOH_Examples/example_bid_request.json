@@ -24,8 +24,10 @@
                 ],
                 "mimes": [
                     "image/jpg",
-                    "image/png"
-                ]
+                    "image/png",
+                    "text/html"
+                ],
+                "dt": 10
             },
             "pmp": {
                 "private_auction": 0,
@@ -37,13 +39,10 @@
                     }
                 ]
             },
-            "ext": {
-                "qty": {
-                    "multiplier": 14.2,
-                    "multipliertype": 0,
-                    "multipliervendor": "Route.org.uk"
-                },
-                "dt": 10
+            "qty": {
+                "multiplier": 14.2,
+                "multipliertype": 0,
+                "multipliervendor": "route.org.uk"
             }
         }
     ],
@@ -58,17 +57,15 @@
         "h": 1920,
         "ppi": 72,
         "ifa": "1235461904",
-        "ext": {
-            "ifa_type": "ppid",
-            "eids": {
-                "source": "oohspace.co.uk",
-                "uids": [
-                    {
-                        "atype": 501,
-                        "id": "1235461904"
-                    }
-                ]
-            }
+        "ifa_type": "ppid",
+        "eids": {
+            "source": "oohspace.co.uk",
+            "uids": [
+                {
+                    "atype": 501,
+                    "id": "1235461904"
+                }
+            ]
         }
     },
     "dooh": {
@@ -81,7 +78,7 @@
             "id": "G1",
             "name": "Global"
         },
-        "domain": "www.global.com/ads.txt",
+        "domain": "global.com",
         "venuetax": 1,
         "venuetypeid": 30101
     },
