@@ -42,6 +42,10 @@
                   "type": "string"
                 }
               },
+              "etime": {
+                "description": "The exposure time in seconds per view that the creative will be displayed before refreshing to the next creative",
+                "type": "number"
+              },
               "ext": {
                 "description": "Placeholder for community extensions to OpenRTB",
                 "type": "object",
@@ -156,37 +160,27 @@
             "description": "Advisory as to the number of seconds that may elapse between the auction and the actual impression",
             "type": "integer"
           },
-          "ext": {
-            "description": "Placeholder for community extensions to OpenRTB",
+          "qty": {
+            "description": "impression mulitplier object",
             "type": "object",
             "properties": {
-              "qty": {
-                "description": "impression mulitplier object",
-                "type": "object",
-                "properties": {
-                  "multiplier": {
-                    "description": "The quantity of billable events which will be deemed to have occurred if this item is purchased. For example, a DOOH opportunity may be considered to be 14.2 impressions. This is the same as the qtyflt field in OpenRTB 3.0",
-                    "type": "number"
-                  },
-                  "multipliertype": {
-                    "description": "The source type of the quantity measurement. 0=unknown, 1=Measurement Vendor Provided, 2=Publisher Provided, 3=Exchange Provided",
-                    "type": "integer",
-                    "enum": [
-                      0,
-                      1,
-                      2,
-                      3
-                    ]
-                  },
-                  "multipliervendor": {
-                    "description": "The top level business domain name of the measurement vendor providing the quantity measurement",
-                    "type": "string"
-                  }
-                }
-              },
-              "etime": {
-                "description": "The exposure time in seconds per view that the creative will be displayed before refreshing to the next creative",
+              "multiplier": {
+                "description": "The quantity of billable events which will be deemed to have occurred if this item is purchased. For example, a DOOH opportunity may be considered to be 14.2 impressions. This is the same as the qtyflt field in OpenRTB 3.0",
                 "type": "number"
+              },
+              "multipliertype": {
+                "description": "The source type of the quantity measurement. 0=unknown, 1=Measurement Vendor Provided, 2=Publisher Provided, 3=Exchange Provided",
+                "type": "integer",
+                "enum": [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              },
+              "multipliervendor": {
+                "description": "The top level business domain name of the measurement vendor providing the quantity measurement",
+                "type": "string"
               }
             }
           }
@@ -236,41 +230,35 @@
           "description": "A device ID used to identify an individual out of home device.",
           "type": "string"
         },
-        "ext": {
-          "description": "Placeholder for community extensions to OpenRTB",
+        "ifa_type": {
+          "description": "For DOOH this is given as ppid to show this is a publisher-provided device id or sspid to show this is an exchange-provided device id",
+          "type": "string",
+          "enum": [
+            "ppid",
+            "sspid"
+          ]
+        },
+        "eids": {
+          "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
           "type": "object",
           "properties": {
-            "ifa_type": {
-              "description": "For DOOH this is given as ppid to show this is a publisher-provided device id or sspid to show this is an exchange-provided device id",
-              "type": "string",
-              "enum": [
-                "ppid",
-                "sspid"
-              ]
+            "source": {
+              "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
+              "type": "string"
             },
-            "eids": {
-              "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
-              "type": "object",
-              "properties": {
-                "source": {
-                  "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
-                  "type": "string"
-                },
-                "uids": {
-                  "description": "Array of extended ID UID objects from the given source.",
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "id": {
-                        "description": "Cookie or platform-native identifier.",
-                        "type": "string"
-                      },
-                      "atype": {
-                        "description": "Type of user agent the match is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to List: Agent Types in AdCOM 1.0",
-                        "type": "integer"
-                      }
-                    }
+            "uids": {
+              "description": "Array of extended ID UID objects from the given source.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "description": "Cookie or platform-native identifier.",
+                    "type": "string"
+                  },
+                  "atype": {
+                    "description": "Type of user agent the match is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to List: Agent Types in AdCOM 1.0",
+                    "type": "integer"
                   }
                 }
               }
