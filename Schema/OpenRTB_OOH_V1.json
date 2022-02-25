@@ -160,6 +160,10 @@
             "description": "Advisory as to the number of seconds that may elapse between the auction and the actual impression",
             "type": "integer"
           },
+          "dt": {
+            "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
+            "type": "integer"
+          },
           "qty": {
             "description": "impression mulitplier object",
             "type": "object",
@@ -320,10 +324,6 @@
         "domain": {
           "description": "Domain of the inventory (ads.txt) owner (e.g., “mysite.foo.com”).",
           "type": "string"
-        },
-        "dt": {
-          "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
-          "type": "integer"
         },
         "keywords": {
           "description": "Comma separated list of keywords about the DOOH placement",
