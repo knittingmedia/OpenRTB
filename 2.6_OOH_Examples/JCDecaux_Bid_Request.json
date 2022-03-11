@@ -1,45 +1,33 @@
 {
     "$schema": "https://raw.githubusercontent.com/knittingmedia/OpenRTB/main/Schema/OpenRTB_OOH_V1.json",
-    "id": "162059897743978051070",
+    "id": "873465983764395",
     "at": 1,
     "imp": [
         {
-            "id": "007",
+            "id": "123456",
             "secure": 1,
-            "exp": 360,
-            "bidfloor": 5.0,
+            "exp": 720,
+            "bidfloor": 4.8,
             "bidfloorcur": "GBP",
-            "banner": {
-                "w": 1080,
-                "h": 1920,
-                "format": [
-                    {
-                        "w": 1080,
-                        "h": 1920
-                    },
-                    {
-                        "w": 720,
-                        "h": 1366
-                    }
-                ],
-                "mimes": [
-                    "image/jpg",
-                    "image/png",
-                    "text/html"
-                ],
-                "etime": 10
+            "video": {
+                "boxingallowed": 1,
+                "w": 960,
+                "h": 480,
+                "maxduration": 20,
+                "minduration": 20,
+                "mimes": ["video/jpeg","video/mp4","video/mov"]
             },
             "pmp": {
-                "private_auction": 0,
+                "private_auction": 1,
                 "deals": [
                     {
-                        "id": "123",
+                        "id": "V123",
                         "at": 1,
                         "bidfloor": 4.50
                     }
                 ]
             },
-            "dt": 12345670,
+            "dt": 1647010095,
             "qty": {
                 "multiplier": 14.2,
                 "multipliertype": 0,
@@ -49,38 +37,38 @@
     ],
     "device": {
         "geo": {
-            "lat": 0.0001,
-            "long": -0.1235,
+            "lat": 51.51112,
+            "long": -0.09043,
             "lastfix": 0
         },
         "devicetype": 8,
-        "w": 1080,
-        "h": 1920,
-        "ppi": 72,
-        "ifa": "1235461904",
+        "w": 960,
+        "h": 480,
+        "ppi": 3,
+        "ifa": "1234928801",
         "ifa_type": "ppid",
         "eids": {
             "source": "oohspace.co.uk",
             "uids": [
                 {
                     "atype": 501,
-                    "id": "1235461904"
+                    "id": "1234928801"
                 }
             ]
         }
     },
     "dooh": {
         "content": {},
-        "id": "15790",
-        "keywords": "Roadside, Billboard, D96",
+        "id": "Transvision",
+        "keywords": "Large Format, CANNON STREET STN,CANNON STREET,MAIN CONCOURSE",
         "name": "This",
         "publisher": {
-            "id": "G1",
-            "name": "Global"
+            "id": "VJCDUK",
+            "name": "viooh"
         },
-        "domain": "global.com",
+        "domain": "viooh.com",
         "venuetax": 1,
-        "venuetypeid": 30101
+        "venuetypeid": 10602
     },
     "cur": [
         "GBP"
