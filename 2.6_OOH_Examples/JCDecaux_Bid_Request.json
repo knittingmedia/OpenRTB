@@ -1,0 +1,88 @@
+{
+    "$schema": "https://raw.githubusercontent.com/knittingmedia/OpenRTB/main/Schema/OpenRTB_OOH_V1.json",
+    "id": "162059897743978051070",
+    "at": 1,
+    "imp": [
+        {
+            "id": "007",
+            "secure": 1,
+            "exp": 360,
+            "bidfloor": 5.0,
+            "bidfloorcur": "GBP",
+            "banner": {
+                "w": 1080,
+                "h": 1920,
+                "format": [
+                    {
+                        "w": 1080,
+                        "h": 1920
+                    },
+                    {
+                        "w": 720,
+                        "h": 1366
+                    }
+                ],
+                "mimes": [
+                    "image/jpg",
+                    "image/png",
+                    "text/html"
+                ],
+                "etime": 10
+            },
+            "pmp": {
+                "private_auction": 0,
+                "deals": [
+                    {
+                        "id": "123",
+                        "at": 1,
+                        "bidfloor": 4.50
+                    }
+                ]
+            },
+            "dt": 12345670,
+            "qty": {
+                "multiplier": 14.2,
+                "multipliertype": 0,
+                "multipliervendor": "route.org.uk"
+            }
+        }
+    ],
+    "device": {
+        "geo": {
+            "lat": 0.0001,
+            "long": -0.1235,
+            "lastfix": 0
+        },
+        "devicetype": 8,
+        "w": 1080,
+        "h": 1920,
+        "ppi": 72,
+        "ifa": "1235461904",
+        "ifa_type": "ppid",
+        "eids": {
+            "source": "oohspace.co.uk",
+            "uids": [
+                {
+                    "atype": 501,
+                    "id": "1235461904"
+                }
+            ]
+        }
+    },
+    "dooh": {
+        "content": {},
+        "id": "15790",
+        "keywords": "Roadside, Billboard, D96",
+        "name": "This",
+        "publisher": {
+            "id": "G1",
+            "name": "Global"
+        },
+        "domain": "global.com",
+        "venuetax": 1,
+        "venuetypeid": 30101
+    },
+    "cur": [
+        "GBP"
+    ]
+}
