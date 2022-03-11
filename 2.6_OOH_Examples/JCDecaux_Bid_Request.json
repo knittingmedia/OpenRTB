@@ -15,7 +15,7 @@
                 "h": 480,
                 "maxduration": 20,
                 "minduration": 20,
-                "mimes": ["video/jpeg","video/mp4","video/mov"]
+                "mimes": ["video/jpeg","video/mp4","video/mov"]                
             },
             "pmp": {
                 "private_auction": 1,
@@ -59,9 +59,9 @@
     },
     "dooh": {
         "content": {},
-        "id": "Transvision",
+        "id": "1Frame",
         "keywords": "Large Format, CANNON STREET STN,CANNON STREET,MAIN CONCOURSE",
-        "name": "This",
+        "name": "Transvision",
         "publisher": {
             "id": "VJCDUK",
             "name": "viooh"
