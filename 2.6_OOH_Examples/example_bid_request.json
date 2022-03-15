@@ -42,7 +42,7 @@
             "dt": 12345670,
             "qty": {
                 "multiplier": 14.2,
-                "multipliertype": 0,
+                "multipliertype": 1,
                 "multipliervendor": "route.org.uk"
             }
         }
