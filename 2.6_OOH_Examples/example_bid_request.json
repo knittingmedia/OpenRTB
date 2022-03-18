@@ -59,15 +59,17 @@
         "ppi": 72,
         "ifa": "1235461904",
         "ifa_type": "ppid",
-        "eids": {
-            "source": "oohspace.co.uk",
-            "uids": [
-                {
-                    "atype": 501,
-                    "id": "1235461904"
-                }
-            ]
-        }
+        "eids": [
+            {
+                "source": "oohspace.co.uk",
+                "uids": [
+                    {
+                        "atype": 501,
+                        "id": "1235461904"
+                    }
+                ]
+            }
+        ]
     },
     "dooh": {
         "content": {},
