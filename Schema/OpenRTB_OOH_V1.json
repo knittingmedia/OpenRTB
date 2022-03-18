@@ -245,24 +245,26 @@
         "eids": {
           "description": "Used to send additional identifiers. e.g. geopath.org or oohspace.co.uk or to signal the ifa provider",
           "type": "array",
-          "properties": {
-            "source": {
-              "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
-              "type": "string"
-            },
-            "uids": {
-              "description": "Array of extended ID UID objects from the given source.",
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "id": {
-                    "description": "Cookie or platform-native identifier.",
-                    "type": "string"
-                  },
-                  "atype": {
-                    "description": "Type of user agent the match is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to List: Agent Types in AdCOM 1.0",
-                    "type": "integer"
+          "items": {
+            "properties": {
+              "source": {
+                "description": "Source or technology provider responsible for the set of included IDs. Expressed as a top-level domain",
+                "type": "string"
+              },
+              "uids": {
+                "description": "Array of extended ID UID objects from the given source.",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "description": "Cookie or platform-native identifier.",
+                      "type": "string"
+                    },
+                    "atype": {
+                      "description": "Type of user agent the match is from. It is highly recommended to set this, as many DSPs separate app-native IDs from browser-based IDs and require a type value for ID resolution. Refer to List: Agent Types in AdCOM 1.0",
+                      "type": "integer"
+                    }
                   }
                 }
               }
