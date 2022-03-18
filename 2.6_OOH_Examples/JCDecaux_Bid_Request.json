@@ -15,7 +15,11 @@
                 "h": 480,
                 "maxduration": 20,
                 "minduration": 20,
-                "mimes": ["video/jpeg","video/mp4","video/mov"]      
+                "mimes": [
+                    "video/jpeg",
+                    "video/mp4",
+                    "video/mov"
+                ]
             },
             "pmp": {
                 "private_auction": 1,
@@ -47,15 +51,17 @@
         "ppi": 3,
         "ifa": "1234928801",
         "ifa_type": "ppid",
-        "eids": {
-            "source": "oohspace.co.uk",
-            "uids": [
-                {
-                    "atype": 501,
-                    "id": "1234928801"
-                }
-            ]
-        }
+        "eids": [
+            {
+                "source": "oohspace.co.uk",
+                "uids": [
+                    {
+                        "atype": 501,
+                        "id": "1234928801"
+                    }
+                ]
+            }
+        ]
     },
     "dooh": {
         "content": {},
