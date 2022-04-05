@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "https://github.com/knittingmedia/OpenRTB/blob/main/Schema/OpenRTB_OOH_V1_response.json",
+  "title": "OpenRTB OOH V1 Bid Response",
+  "description": "A schema based on the IAB Techlab & OAAA & Outsamrt OpenRTB 2.x OOH standard. V1.0 by Tim Harvey 05Apr22",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "ID of the bid request to which this is a response",
+      "type": "string"
+    },
+    "seatbid": {
+      "description": "Array of seatbid objects; 1+ required if a bid is to be made",
+      "type": "array",
+      "items": {
+        "properties": {
+          "seat": {
+            "description": "ID of the buyer seat (e.g., advertiser, agency) on whose behalf this bid is made",
+            "type": "string"
+          },
+          "bid": {
+            "description": "Array of 1+ Bid objects each related to an impression.  Multiple bids can relate to the same impression",
+            "type": "array",
+            "items": {
+              "id": {
+                "description": "Bidder generated bid ID to assist with logging/tracking",
+                "type": "string"
+              },
+              "impid": {
+                "description": "ID of the Imp object in the related bid request.",
+                "type": "string"
+              },
+              "price": {
+                "description": "Bid price expressed as CPM although the actual transaction is for a unit impression only.  Note that while the type indicates float, integer math is highly recommended when handling currencies (e.g., BigDecimal in Java).",
+                "type": "number"
+              },
+              "banner": {
+                "description": "Object that describes the banner details that need to be displayed in the impression ",
+                "type": "object",
+                "properties": {
+                  "img": {
+                    "description": "URL where the banner image is located",
+                    "type": "string"
+                  }
+                }
+              },
+              "burl": {
+                "description": "Billing notice URL called by the exchange when a winning bid becomes billable based on exchange-specific business policy (e.g., typically delivered, viewed, etc.).  Substitution macros (Section 4.4) may be included.",
+                "type": "string"
+              },
+              "nurl": {
+                "description": "Win notice URL called by the exchange if the bid wins (not necessarily indicative of a delivered, viewed, or billable ad); optional means of serving ad markup.  Substitution macros (Section 4.4) may be included in both the URL and optionally returned markup.",
+                "type": "string"
+              },
+              "adm": {
+                "description": "Optional means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Substitution macros (Section 4.4) may be included.",
+                "type": "string"
+              },
+              "adomain": {
+                "description": "Advertiser domain for block list checking (e.g. ford.com). This can be an array of for the case of rotating creatives. Exchanges can mandate that only one domain is allowed.",
+                "type": "array"
+              },
+              "cid": {
+                "description": "Campaign ID to assist with ad quality checking; the collection of creatives for which iurl should be representative.",
+                "type": "string"
+              },
+              "crid": {
+                "description": "Creative ID to assist with ad quality checking.",
+                "type": "string"
+              },
+              "attr": {
+                "description": "Array of attributes describing the creative.  Refer to OpenRTB Creative Attributes Table for the integers to reference",
+                "type": "array"
+              },
+              "w": {
+                "description": "Width of the creative in device independent pixels (DIPS).",
+                "type": "integer"
+              },
+              "h": {
+                "description": "Height of the creative in device independent pixels (DIPS).",
+                "type": "integer"
+              },
+              "cat": {
+                "description": "Integer array of IAB content categories of the creative",
+                "type": "array"
+              }
+            }
+          }
+        },
+        "video": {
+          "description": "A Video object; required if this impression is offered as a video ad opportunity.",
+          "type": "object",
+          "properties": {
+            "mimes": {
+              "description": "Content MIME types supported (e.g., “video/mp4”)",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "minduration": {
+              "description": "Minimum video ad duration in seconds. This field is mutually exclusive with rqddurs; only one of minduration and rqddurs may be in a bid request",
+              "type": "integer"
+            },
+            "maxduration": {
+              "description": "Maximum video ad duration in seconds. This field is mutually exclusive with rqddurs; only one of maxduration and rqddurs may be in a bid request",
+              "type": "integer"
+            },
+            "protocols": {
+              "description": "Array of supported video protocols. Refer to List: Creative Subtypes - Audio/Video in AdCOM 1.0",
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            },
+            "w": {
+              "description": "Width of the video player in device independent pixels (DIPS)",
+              "type": "integer"
+            },
+            "h": {
+              "description": "Height of the video player in device independent pixels (DIPS)",
+              "type": "integer"
+            },
+            "boxingallowed": {
+              "description": "Indicates if letter-boxing of a:b content into a c:d window is allowed, where 0 = no, 1 = yes. For DOOH, when boxingallowed = 0, the video aspect ratio should strictly match that of the placement, as determined by the video w and h fields. ",
+              "type": "integer"
+            },
+            "playbackmethod": {
+              "description": "Playback methods that may be in use. If none are specified, any method may be used. Refer to List: Playback Methods in AdCOM 1.0. Only one method is typically used in practice. As a result, this array may be converted to an integer in a future version of the specification. It is strongly advised to use only the first element of this array in preparation for this change",
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "audio": {
+          "description": "An Audio object; required if this impression is offered as an audio ad opportunity. Schema to be confirmed for OOH",
+          "type": "object",
+          "properties": {}
+        },
+        "pmp": {
+          "description": "A Pmp object containing any private marketplace deals in effect for this impression",
+          "type": "object",
+          "properties": {
+            "private_auction": {
+              "description": "Indicator of auction eligibility to seats named in the Direct Deals object, where 0 = all bids are accepted, 1 = bids are restricted to the deals specified and the terms thereof",
+              "type": "integer",
+              "default": 0,
+              "enum": [
+                0,
+                1
+              ]
+            },
+            "deals": {
+              "description": "Array of Deal objects that convey the specific deals applicable to this impression",
+              "type": "array",
+              "items": {
+                "properties": {
+                  "id": {
+                    "description": "A unique identifier for deal",
+                    "type": "string"
+                  },
+                  "bidfloor": {
+                    "description": "Minimum bid for this impression expressed in CPM",
+                    "type": "number"
+                  },
+                  "at": {
+                    "description": "Auction type, where 1 = First Price, 2 = Second Price Plus. Exchange-specific auction types can be defined using values 500 and greater",
+                    "type": "integer",
+                    "enum": [
+                      1,
+                      2
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "bidfloor": {
+          "description": "Minimum bid for this impression expressed in CPM",
+          "type": "number"
+        },
+        "bidfloorcur": {
+          "description": "Currency specified using ISO-4217 alpha codes. This may be different from bid currency returned by bidder if this is allowed by the exchange",
+          "type": "string"
+        },
+        "secure": {
+          "description": "Flag to indicate if the impression requires secure HTTPS URL creative assets and markup, where 0 = non-secure, 1 = secure. If omitted, the secure state is unknown, but non- secure HTTP support can be assumed",
+          "type": "integer"
+        },
+        "exp": {
+          "description": "Advisory as to the number of seconds that may elapse between the auction and the actual impression",
+          "type": "integer"
+        },
+        "dt": {
+          "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
+          "type": "integer"
+        },
+        "qty": {
+          "description": "impression mulitplier object",
+          "type": "object",
+          "properties": {
+            "multiplier": {
+              "description": "The quantity of billable events which will be deemed to have occurred if this item is purchased. For example, a DOOH opportunity may be considered to be 14.2 impressions. This is the same as the qtyflt field in OpenRTB 3.0",
+              "type": "number"
+            },
+            "multipliertype": {
+              "description": "The source type of the quantity measurement. 0=unknown, 1=Measurement Vendor Provided, 2=Publisher Provided, 3=Exchange Provided",
+              "type": "integer",
+              "enum": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            "multipliervendor": {
+              "description": "The top level business domain name of the measurement vendor providing the quantity measurement",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
