@@ -225,6 +225,14 @@
           }
         }
       }
+    },
+    "bidid": {
+      "description": "Bidder generated response ID to assist with logging/tracking.",
+      "type": "string"
+    },
+    "cur": {
+      "description": "Bid currency using ISO-4217 alpha codes.",
+      "type": "string"
     }
   }
 }
