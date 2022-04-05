@@ -22,67 +22,69 @@
             "description": "Array of 1+ Bid objects each related to an impression.  Multiple bids can relate to the same impression",
             "type": "array",
             "items": {
-              "id": {
-                "description": "Bidder generated bid ID to assist with logging/tracking",
-                "type": "string"
-              },
-              "impid": {
-                "description": "ID of the Imp object in the related bid request.",
-                "type": "string"
-              },
-              "price": {
-                "description": "Bid price expressed as CPM although the actual transaction is for a unit impression only.  Note that while the type indicates float, integer math is highly recommended when handling currencies (e.g., BigDecimal in Java).",
-                "type": "number"
-              },
-              "banner": {
-                "description": "Object that describes the banner details that need to be displayed in the impression ",
-                "type": "object",
-                "properties": {
-                  "img": {
-                    "description": "URL where the banner image is located",
-                    "type": "string"
+              "properties": {
+                "id": {
+                  "description": "Bidder generated bid ID to assist with logging/tracking",
+                  "type": "string"
+                },
+                "impid": {
+                  "description": "ID of the Imp object in the related bid request.",
+                  "type": "string"
+                },
+                "price": {
+                  "description": "Bid price expressed as CPM although the actual transaction is for a unit impression only.  Note that while the type indicates float, integer math is highly recommended when handling currencies (e.g., BigDecimal in Java).",
+                  "type": "number"
+                },
+                "banner": {
+                  "description": "Object that describes the banner details that need to be displayed in the impression ",
+                  "type": "object",
+                  "properties": {
+                    "img": {
+                      "description": "URL where the banner image is located",
+                      "type": "string"
+                    }
                   }
+                },
+                "burl": {
+                  "description": "Billing notice URL called by the exchange when a winning bid becomes billable based on exchange-specific business policy (e.g., typically delivered, viewed, etc.).  Substitution macros (Section 4.4) may be included.",
+                  "type": "string"
+                },
+                "nurl": {
+                  "description": "Win notice URL called by the exchange if the bid wins (not necessarily indicative of a delivered, viewed, or billable ad); optional means of serving ad markup.  Substitution macros (Section 4.4) may be included in both the URL and optionally returned markup.",
+                  "type": "string"
+                },
+                "adm": {
+                  "description": "Optional means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Substitution macros (Section 4.4) may be included.",
+                  "type": "string"
+                },
+                "adomain": {
+                  "description": "Advertiser domain for block list checking (e.g. ford.com). This can be an array of for the case of rotating creatives. Exchanges can mandate that only one domain is allowed.",
+                  "type": "array"
+                },
+                "cid": {
+                  "description": "Campaign ID to assist with ad quality checking; the collection of creatives for which iurl should be representative.",
+                  "type": "string"
+                },
+                "crid": {
+                  "description": "Creative ID to assist with ad quality checking.",
+                  "type": "string"
+                },
+                "attr": {
+                  "description": "Array of attributes describing the creative.  Refer to OpenRTB Creative Attributes Table for the integers to reference",
+                  "type": "array"
+                },
+                "w": {
+                  "description": "Width of the creative in device independent pixels (DIPS).",
+                  "type": "integer"
+                },
+                "h": {
+                  "description": "Height of the creative in device independent pixels (DIPS).",
+                  "type": "integer"
+                },
+                "cat": {
+                  "description": "Integer array of IAB content categories of the creative",
+                  "type": "array"
                 }
-              },
-              "burl": {
-                "description": "Billing notice URL called by the exchange when a winning bid becomes billable based on exchange-specific business policy (e.g., typically delivered, viewed, etc.).  Substitution macros (Section 4.4) may be included.",
-                "type": "string"
-              },
-              "nurl": {
-                "description": "Win notice URL called by the exchange if the bid wins (not necessarily indicative of a delivered, viewed, or billable ad); optional means of serving ad markup.  Substitution macros (Section 4.4) may be included in both the URL and optionally returned markup.",
-                "type": "string"
-              },
-              "adm": {
-                "description": "Optional means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both. Substitution macros (Section 4.4) may be included.",
-                "type": "string"
-              },
-              "adomain": {
-                "description": "Advertiser domain for block list checking (e.g. ford.com). This can be an array of for the case of rotating creatives. Exchanges can mandate that only one domain is allowed.",
-                "type": "array"
-              },
-              "cid": {
-                "description": "Campaign ID to assist with ad quality checking; the collection of creatives for which iurl should be representative.",
-                "type": "string"
-              },
-              "crid": {
-                "description": "Creative ID to assist with ad quality checking.",
-                "type": "string"
-              },
-              "attr": {
-                "description": "Array of attributes describing the creative.  Refer to OpenRTB Creative Attributes Table for the integers to reference",
-                "type": "array"
-              },
-              "w": {
-                "description": "Width of the creative in device independent pixels (DIPS).",
-                "type": "integer"
-              },
-              "h": {
-                "description": "Height of the creative in device independent pixels (DIPS).",
-                "type": "integer"
-              },
-              "cat": {
-                "description": "Integer array of IAB content categories of the creative",
-                "type": "array"
               }
             }
           }
