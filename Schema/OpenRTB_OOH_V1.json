@@ -172,7 +172,7 @@
                 "description": "The quantity of billable events which will be deemed to have occurred if this item is purchased. For example, a DOOH opportunity may be considered to be 14.2 impressions. This is the same as the qtyflt field in OpenRTB 3.0",
                 "type": "number"
               },
-              "multipliertype": {
+              "sourcetype": {
                 "description": "The source type of the quantity measurement. 0=unknown, 1=Measurement Vendor Provided, 2=Publisher Provided, 3=Exchange Provided",
                 "type": "integer",
                 "enum": [
@@ -182,7 +182,7 @@
                   3
                 ]
               },
-              "multipliervendor": {
+              "vendor": {
                 "description": "The top level business domain name of the measurement vendor providing the quantity measurement",
                 "type": "string"
               }
