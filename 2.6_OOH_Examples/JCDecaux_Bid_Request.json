@@ -34,8 +34,8 @@
             "dt": 1647010095,
             "qty": {
                 "multiplier": 14.2,
-                "multipliertype": 0,
-                "multipliervendor": "route.org.uk"
+                "sourcetype": 0,
+                "vendor": "route.org.uk"
             }
         }
     ],

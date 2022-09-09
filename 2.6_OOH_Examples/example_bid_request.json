@@ -52,8 +52,8 @@
             "dt": 12345670,
             "qty": {
                 "multiplier": 14.2,
-                "multipliertype": 1,
-                "multipliervendor": "route.org.uk"
+                "sourcetype": 1,
+                "vendor": "route.org.uk"
             }
         }
     ],
