@@ -26,8 +26,7 @@
                     "image/jpg",
                     "image/png",
                     "text/html"
-                ],
-                "etime": 10
+                ]
             },
             "pmp": {
                 "private_auction": 0,
@@ -50,6 +49,7 @@
                 ]
             },
             "dt": 12345670,
+            "etime": 10,
             "qty": {
                 "multiplier": 14.2,
                 "sourcetype": 1,
