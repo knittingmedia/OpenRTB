@@ -49,7 +49,6 @@
                 ]
             },
             "dt": 12345670,
-            "etime": 10,
             "qty": {
                 "multiplier": 14.2,
                 "sourcetype": 1,
