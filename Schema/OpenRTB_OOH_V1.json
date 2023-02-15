@@ -160,10 +160,6 @@
             "description": "Timestamp when the item is expected to be fulfilled (e.g. when a DOOH impression will be displayed) in Unix format (i.e., milliseconds since the epoch).",
             "type": "integer"
           },
-          "etime": {
-            "description": "The exposure time in seconds per view that the creative will be displayed before refreshing to the next creative",
-            "type": "number"
-          },
           "qty": {
             "description": "impression mulitplier object",
             "type": "object",
