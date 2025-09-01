@@ -1,0 +1,139 @@
+{
+    "id": "5452980d-ff25-4d19-9f4e-d41d748a84b6",
+    "user": {
+        "ifa": "2000214680",
+        "ext": {
+            "demographic": {
+                "total": 2.182241
+            }
+        }
+    },
+    "device": {
+        "ifa": "2000214680",
+        "ppi": 29,
+        "devicetype": 8,
+        "eids": {
+            "source": "oohspace.co.uk",
+            "uids": [
+                {
+                    "atype": 501,
+                    "id": "2000214680"
+                }
+            ]
+        },
+        "h": 1920,
+        "ip": "0.0.0.0",
+        "ifa_type": "ppid",
+        "ext": {
+            "environment_code": "Roadside",
+            "format_size_id": 1,
+            "dooh": {
+                "internetavailable": 1,
+                "impmultiply": 2.182241,
+                "height": 1.67,
+                "width": 0.95,
+                "venuetypeid": 302
+            }
+        },
+        "w": 1080,
+        "geo": {
+            "zip": "SS2 6EJ",
+            "lon": 0.71057884,
+            "lat": 51.54160989,
+            "region": "ENG-SOS",
+            "type": 1,
+            "country": "GB",
+            "utcoffset": 60,
+            "city": "Southend-on-Sea"
+        }
+    },
+    "tmax": 1500,
+    "cur": [
+        "GBP"
+    ],
+    "imp": [
+        {
+            "dt": 1756719900,
+            "qty": {
+                "sourcetype": 1,
+                "vendor": "route.org.uk",
+                "multiplier": 2.182241
+            },
+            "banner": {
+                "h": 1920,
+                "format": [
+                    {
+                        "w": 1080,
+                        "h": 1920
+                    },
+                    {
+                        "w": 1080,
+                        "h": 1920
+                    }
+                ],
+                "ext": {
+                    "exposetime": 10,
+                    "width": 0.95,
+                    "height": 1.67
+                },
+                "w": 1080,
+                "mimes": [
+                    "application/zip",
+                    "image/png",
+                    "image/jpeg"
+                ]
+            },
+            "exp": 2700,
+            "ext": {
+                "dooh": {
+                    "exposetime": 10,
+                    "displaytime": 1756719900
+                }
+            },
+            "secure": 1,
+            "pmp": {
+                "private_auction": 1,
+                "deals": [
+                    {
+                        "bidfloor": 10,
+                        "id": "dax-23TLAI",
+                        "bidfloorcur": "GBP",
+                        "wseat": [
+                            "1"
+                        ],
+                        "at": 1
+                    }
+                ]
+            },
+            "id": "9c353b99-a164-4c77-be94-b4a9689571aa"
+        }
+    ],
+    "ext": {
+        "dooh": {
+            "impmultiply": 2.182241
+        }
+    },
+    "refresh": {
+        "refsettings": [
+            {
+                "minint": 10,
+                "reftype": 3
+            }
+        ]
+    },
+    "dooh": {
+        "id": "2000214680",
+        "name": "SHUB Footpath at Victoria Avenue/Queensway Junction",
+        "venuetypetax": 1,
+        "ext": {
+            "environment_code": "Roadside"
+        },
+        "publisher": {
+            "name": "Global",
+            "id": "171"
+        },
+        "venuetype": [
+            "302"
+        ]
+    }
+}
