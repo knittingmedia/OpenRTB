@@ -13,7 +13,7 @@
                     "nurl": "https://rtb.dooh.direct/dax/win?bid_id=PHK1RV6WTN-1&price=${AUCTION_PRICE}",
                     "burl": "https://rtb.dooh.direct/dax/imp?bid_id=PHK1RV6WTN-1&price=${AUCTION_PRICE}",
                     "lurl": "https://rtb.dooh.direct/dax/loss?bid_id=PHK1RV6WTN-1&reason=${AUCTION_LOSS}",
-                    "iurl": "https://rtb.dooh.direct/dax/img?bid_id=PHK1RV6WTN-1"
+                    "iurl": "https://storage.googleapis.com/knitting_media_ads/KHC_AM.jpg"
                 }
             ],
             "seat": "1"
