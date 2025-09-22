@@ -1,0 +1,24 @@
+{
+    "id": "cc8be73f-4e2e-483e-9b54-daa55fff4a1e",
+    "cur": "USD",
+    "seatbid": [
+        {
+            "bid": [
+                {
+                    "id": "PHK1RV6WTN-2",
+                    "impid": "9c353b99-a164-4c77-be94-b4a9689571aa",
+                    "price": 10,
+                    "dealid": "dax-23TLAI",
+                    "adid": "KM2",
+                    "nurl": "https://rtb.dooh.direct/dax/win?bid_id=PHK1RV6WTN-1&price=${AUCTION_PRICE}",
+                    "burl": "https://rtb.dooh.direct/dax/imp?bid_id=PHK1RV6WTN-1&price=${AUCTION_PRICE}",
+                    "lurl": "https://rtb.dooh.direct/dax/loss?bid_id=PHK1RV6WTN-1&reason=${AUCTION_LOSS}",
+                    "ext":{
+                        "vast_url": "https://rtb.dooh.direct/dax/vast?bid_id=PHK1RV6WTN-2"
+                    }
+                }
+            ],
+            "seat": "1"
+        }
+    ]
+}
