@@ -1,0 +1,20 @@
+{
+    "id": "{ID of the bid request to which this is a response}",
+    "seatbid": [
+        {
+            "bid": [
+                {
+                    "id": "{our bid id}",
+                    "impid": "{ID of the Impobject in the related bid request}",
+                    "price": 10,
+                    "dealid": "{Reference to the deal.id from the bid request if this bid pertains to a private marketplace direct deal}",
+                    "adid": "KM1",
+                    "nurl": "https://rtb.dooh.direct/dax/win?bid_id=PHK1RV6WTN-1&price=${AUCTION_PRICE}",
+                    "burl": "https://rtb.dooh.direct/dax/imp?bid_id=PHK1RV6WTN-1&price=${AUCTION_PRICE}&duration=$(DURATION)&start=$(START)",
+                    "lurl": "https://rtb.dooh.direct/dax/loss?bid_id=PHK1RV6WTN-1&reason=${AUCTION_LOSS}"
+                }
+            ],
+            "seat": "1"
+        }
+    ]
+}
