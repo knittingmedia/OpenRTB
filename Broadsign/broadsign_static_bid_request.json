@@ -1,0 +1,114 @@
+{
+  "tmax": 750,
+  "id": "2e7f031f-cfa6-4377-a85c-5afac83a179e",
+  "at": 1,
+  "imp": [
+    {
+      "bidfloor": 6.75,
+      "bidfloorcur": "CAD",
+      "exp": 172800,
+      "ext": {
+        "displaytime": 1585594647
+      },
+      "dt": 1585594647,
+      "qty": {
+        "multiplier": 1.55
+      },
+      "pmp": {
+        "private_auction": 0,
+        "deals": [
+          {
+            "bidfloor": 1,
+            "id": "DH5H4JFURU",
+            "bidfloorcur": "CAD",
+            "ext": {
+              "adspottype": 2
+            },
+            "wseat": ["TEST-SEAT11"],
+            "at": 1
+          }
+        ]
+      },
+      "id": "1",
+      "video": {
+        "h": 1080,
+        "minduration": 1,
+        "protocols": [2, 3, 5, 6],
+        "mimes": ["video/x-msvideo", "video/x-flv", "video/mpeg", "video/quicktime", "video/mp4", "video/webm", "video/x-ms-wmv"],
+        "w": 1920,
+        "maxduration": 20
+      }
+    },
+    {
+      "exp": 172800,
+      "ext": {
+        "displaytime": 1585594647
+      },
+      "dt": 1585594647,
+      "qty": {
+        "multiplier": 1.55
+      },
+      "pmp": {
+        "private_auction": 1,
+        "deals": [
+          {
+            "bidfloor": 1,
+            "id": "DH5H4JFURU",
+            "bidfloorcur": "CAD",
+            "ext": {
+              "adspottype": 2
+            },
+            "wseat": ["TEST-SEAT11"],
+            "at": 1
+          }
+        ]
+      },
+      "id": "2",
+      "banner": {
+        "w": 1920,
+        "h": 1080,
+        "mimes": ["image/gif", "image/jpeg", "image/png", "application/x-html-package"]
+      }
+    }
+  ],
+  "cur": ["CAD"],
+  "dooh": {
+    "id": "broadsign.com:123456789",
+    "name": "BroadSign Test Player",
+    "venuetype": ["10101"],
+    "venuetypetax": 5,
+    "publisher": {
+      "name": "Broadsign Test Pub",
+      "id": "1490"
+    }
+  },
+  "user": {
+    "ext": {
+      "demographic": {
+        "TOTAL": 1.55
+      }
+    },
+    "id": "broadsign.com:123456789"
+  },
+  "device": {
+    "ifa": "broadsign.com:123456789",
+    "ua": "BroadSign Reach DOOH Player/1.0",
+    "h": 1080,
+    "ip": "45.61.2.26",
+    "ext": {
+      "dooh": {
+        "venuetypeid": 10101,
+        "venuetypelist": [1, 101, 10101]
+      }
+    },
+    "w": 1920,
+    "geo": {
+      "country": "CA",
+      "lon": -73.567101,
+      "lat": 45.5014,
+      "region": "QC",
+      "city": "Montreal",
+      "type": 1
+    }
+  }
+}

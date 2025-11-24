@@ -1,0 +1,22 @@
+{
+  "id": "0f11e34a-4319-4e5d-9739-bb76d4bb46ae",
+  "seatbid": [
+    {
+      "bid": [
+        {
+          "id": "1",
+          "impid": "2",
+          "price": 5.01,
+          "dealid": "DH5H4JFURU",
+          "adid": "1945",
+          "iurl": "http://adserver.com/preview?impid=102",
+          "lurl": "https://demand.partner.com/loss?loss_reason=${AUCTION_LOSS}",
+          "burl": "https://demand.partner.com/pop?win_price=${AUCTION_PRICE}",
+          "nurl": "https://demand.partner.com/win?win_price=${AUCTION_PRICE}"
+        }
+      ],
+      "seat": "DSP-SEAT-2A"
+    }
+  ],
+  "cur": "USD"
+}
